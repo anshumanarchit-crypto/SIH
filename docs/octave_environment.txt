@@ -1,0 +1,14 @@
+SpectraQ Octave Environment
+===========================
+
+Date:
+22 September 2026
+
+GNU Octave version:
+11.3.0
+
+jsonencode availability:
+5
+
+jsonencode path:
+built-in function from the file libinterp/corefcn/jsonencode.cc
