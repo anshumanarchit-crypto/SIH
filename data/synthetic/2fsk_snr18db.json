@@ -1,0 +1,34 @@
+{
+  "sample_rate": 100000.0,
+  "center_freq": 0.0,
+  "is_complex": true,
+  "num_samples": 5088,
+  "duration_sec": 0.05088,
+  "data_type": "complex64",
+  "custom_metadata": {
+    "ground_truth": {
+      "modulation": "2-FSK",
+      "snr_db": 18.0,
+      "sps": 16,
+      "baud_rate": 6250.0,
+      "cfo_hz": 0.0,
+      "gain_imbalance_db": 0.0,
+      "phase_imbalance_deg": 0.0,
+      "sample_rate": 100000.0,
+      "packet_metadata": {
+        "payload_text": "SPECTRALQ_FSK_SENSOR_BEACON",
+        "sync_name": "BARKER_13",
+        "version": 1,
+        "packet_type": 42,
+        "seq_num": 1001,
+        "crc_type": "crc16",
+        "crc_val": "0x9d3d",
+        "applied_fec": false,
+        "applied_interleaving": false,
+        "num_raw_bits": 280,
+        "num_total_bits": 293
+      },
+      "num_symbols": 146
+    }
+  }
+}

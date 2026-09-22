@@ -1,0 +1,34 @@
+{
+  "sample_rate": 100000.0,
+  "center_freq": 0.0,
+  "is_complex": true,
+  "num_samples": 2488,
+  "duration_sec": 0.02488,
+  "data_type": "complex64",
+  "custom_metadata": {
+    "ground_truth": {
+      "modulation": "BPSK",
+      "snr_db": 20.0,
+      "sps": 8,
+      "baud_rate": 12500.0,
+      "cfo_hz": 0.0,
+      "gain_imbalance_db": 0.0,
+      "phase_imbalance_deg": 0.0,
+      "sample_rate": 100000.0,
+      "packet_metadata": {
+        "payload_text": "SPECTRALQ_BPSK_CLEAN_01",
+        "sync_name": "BARKER_13",
+        "version": 1,
+        "packet_type": 42,
+        "seq_num": 1001,
+        "crc_type": "crc16",
+        "crc_val": "0x9d88",
+        "applied_fec": false,
+        "applied_interleaving": false,
+        "num_raw_bits": 248,
+        "num_total_bits": 261
+      },
+      "num_symbols": 261
+    }
+  }
+}

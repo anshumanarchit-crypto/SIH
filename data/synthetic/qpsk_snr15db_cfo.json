@@ -1,0 +1,34 @@
+{
+  "sample_rate": 100000.0,
+  "center_freq": 0.0,
+  "is_complex": true,
+  "num_samples": 1608,
+  "duration_sec": 0.01608,
+  "data_type": "complex64",
+  "custom_metadata": {
+    "ground_truth": {
+      "modulation": "QPSK",
+      "snr_db": 15.0,
+      "sps": 8,
+      "baud_rate": 12500.0,
+      "cfo_hz": 1250.0,
+      "gain_imbalance_db": 0.0,
+      "phase_imbalance_deg": 0.0,
+      "sample_rate": 100000.0,
+      "packet_metadata": {
+        "payload_text": "SPECTRALQ_QPSK_NAV_TELEMETRY",
+        "sync_name": "BARKER_13",
+        "version": 1,
+        "packet_type": 42,
+        "seq_num": 1001,
+        "crc_type": "crc16",
+        "crc_val": "0xc33f",
+        "applied_fec": false,
+        "applied_interleaving": false,
+        "num_raw_bits": 288,
+        "num_total_bits": 301
+      },
+      "num_symbols": 150
+    }
+  }
+}
