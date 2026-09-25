@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectralq"
+version = "0.1.0"
+description = "SpectralQ SIH26147 - Python Decoder Core"
+authors = [
+    { name = "Arpit", email = "arpit@spectralq.local" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-commpy",
+    "reedsolo",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["python", "."]
+addopts = "-ra -q"
+
+[tool.pyright]
+include = ["python", "tests/unit", "tests/golden", "tests/integration", "tests/fixtures", "scripts"]
+exclude = ["data/_incoming", "**/__pycache__", ".venv*"]
+extraPaths = ["python"]

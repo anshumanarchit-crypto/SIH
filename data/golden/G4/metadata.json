@@ -1,0 +1,28 @@
+{
+  "case_id": "G4",
+  "status": "VALIDATED",
+  "modulation": "16-QAM",
+  "fec_type": "LDPC",
+  "fec_parameters": {},
+  "interleaver_type": "PSEUDORANDOM",
+  "interleaver_parameters": {
+    "seed": 42
+  },
+  "seed": 202604,
+  "source_bit_length": 50,
+  "tx_bit_length": 96,
+  "padding_length": 0,
+  "termination": "none",
+  "source_bits_sha256": "cbac3e62d6bdeb19a59f1a4b064edfabbfc80264e43a763d2820d75ab225b40b",
+  "tx_bits_sha256": "50330a9109223e2466ddd9cf5f7002b201a188aa2c28067f1993acebc308811e",
+  "interleaver_metadata": {
+    "interleaver_type": "PSEUDORANDOM",
+    "original_length": 96,
+    "seed": 42
+  },
+  "fec_metadata": {
+    "fec_type": "LDPC",
+    "encoded_bit_length": 96,
+    "codec_class": "LDPCCodec"
+  }
+}

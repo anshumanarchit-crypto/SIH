@@ -1,0 +1,33 @@
+{
+  "case_id": "G5",
+  "status": "VALIDATED",
+  "modulation": "2-FSK",
+  "fec_type": "CONCAT_RS_CONV",
+  "fec_parameters": {},
+  "interleaver_type": "CONVOLUTIONAL",
+  "interleaver_parameters": {
+    "num_branches": 6,
+    "delay_step": 2
+  },
+  "seed": 202605,
+  "source_bit_length": 1784,
+  "tx_bit_length": 4152,
+  "padding_length": 0,
+  "termination": "6_tail_bits",
+  "source_bits_sha256": "a3217b0f913a64b7a3ab7f6749838f18243a2b2ab78e759dc8da8170dca63aee",
+  "tx_bits_sha256": "61a055c3dce729342da8f86da7fb45119b9fd6d5f48d503eb44ccfc2aa1093a4",
+  "interleaver_metadata": {
+    "interleaver_type": "CONVOLUTIONAL",
+    "original_length": 4092,
+    "flush_length": 60,
+    "interleaved_length": 4152,
+    "num_branches": 6,
+    "delay_step": 2,
+    "startup_delay": 60
+  },
+  "fec_metadata": {
+    "fec_type": "CONCAT_RS_CONV",
+    "encoded_bit_length": 4092,
+    "codec_class": "ConcatenatedCodec"
+  }
+}

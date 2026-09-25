@@ -1,0 +1,89 @@
+{
+  "schema_version": "spectraq.official_manifest.v1",
+  "captures": {
+    "G1_QPSK_uncoded": {
+      "cf32_file": "G1_QPSK_uncoded.cf32",
+      "cf32_bytes": 131072,
+      "cf32_sha256": "e2becef449e81ea48309b0b815fbbc4ef31ade7ef975ad3209042fd022c2b0c9",
+      "truth_file": "G1_QPSK_uncoded.truth.json",
+      "truth_bytes": 582,
+      "truth_sha256": "60d34238b0e0152d4bd2bc8e2a840483c7a16699d5f21d7ebcfc6378ada8891a"
+    },
+    "G2_BPSK_conv_block": {
+      "cf32_file": "G2_BPSK_conv_block.cf32",
+      "cf32_bytes": 34816,
+      "cf32_sha256": "e8648923f8f1c9b1c7612f6841022347b0a2d80781e7eff1c8b417fbe6164e69",
+      "truth_file": "G2_BPSK_conv_block.truth.json",
+      "truth_bytes": 628,
+      "truth_sha256": "e8b69b0e2305026973ec8727c170998717c0aa1a186459350564236a564dd4d4"
+    },
+    "G3_8PSK_RS_diagonal": {
+      "cf32_file": "G3_8PSK_RS_diagonal.cf32",
+      "cf32_bytes": 43520,
+      "cf32_sha256": "97b154c3e557a49e81e3305f1c433b32d1601026c2a6e56a3467033a28407871",
+      "truth_file": "G3_8PSK_RS_diagonal.truth.json",
+      "truth_bytes": 626,
+      "truth_sha256": "4a9b360a4cea429510b6279456bdd426feabd9c024a4648b30be238a5873bd95"
+    },
+    "G4_16QAM_LDPC_pseudorandom": {
+      "cf32_file": "G4_16QAM_LDPC_pseudorandom.cf32",
+      "cf32_bytes": 1536,
+      "cf32_sha256": "f468df6c1a95ea7c87ba94e314514220c65a769562a2e3f49ae93ec9208f74e2",
+      "truth_file": "G4_16QAM_LDPC_pseudorandom.truth.json",
+      "truth_bytes": 646,
+      "truth_sha256": "77fb7c8301147c7366bcff94427cae78102cb3b4a9c88b5b77d4a5695a6c22e8"
+    },
+    "G5_2FSK_RS_Conv_interleaved": {
+      "cf32_file": "G5_2FSK_RS_Conv_interleaved.cf32",
+      "cf32_bytes": 265728,
+      "cf32_sha256": "b69f616917d79c6e9a5c6cefc59e707f00e5beb2af730b6b1ce0edd37cc6cd7e",
+      "truth_file": "G5_2FSK_RS_Conv_interleaved.truth.json",
+      "truth_bytes": 643,
+      "truth_sha256": "b4b2ade1c6f55edb0050173d1943e1fb35b2066055bfe94fca273214a822543f"
+    },
+    "G5_2FSK_uncoded": {
+      "cf32_file": "G5_2FSK_uncoded.cf32",
+      "cf32_bytes": 262144,
+      "cf32_sha256": "234a8390be4a60bf1fcc420513128dc1c3939a1fa8dcd15ac40cd057b88b30b9",
+      "truth_file": "G5_2FSK_uncoded.truth.json",
+      "truth_bytes": 583,
+      "truth_sha256": "666dc31c67aff5c943ffe52aa398e55fcac8200372b21aec2d9362e05e35a419"
+    },
+    "G6_BPSK_conv_interleaved": {
+      "cf32_file": "G6_BPSK_conv_interleaved.cf32",
+      "cf32_bytes": 35072,
+      "cf32_sha256": "e2d39c7370b33bc5dc0b76be84f6ecdc6571d411983463d16bcde0bfa7bac30b",
+      "truth_file": "G6_BPSK_conv_interleaved.truth.json",
+      "truth_bytes": 641,
+      "truth_sha256": "15469851b612b3c788dc4aaef8ab497eba0cd83572368409654d9d5e877c2c43"
+    },
+    "G7_QPSK_conv_near_threshold": {
+      "cf32_file": "G7_QPSK_conv_near_threshold.cf32",
+      "cf32_bytes": 16768,
+      "cf32_sha256": "3dd4a0dd37d29de23ac1df3809553454c5d4db4714f068d4962dac098f2b2055",
+      "truth_file": "G7_QPSK_conv_near_threshold.truth.json",
+      "truth_bytes": 629,
+      "truth_sha256": "08487e8cb40ac867981322e7a98cb6ca264b3ebf60ff9fc9f2fdb00bc3fe2b4b"
+    }
+  },
+  "reference_bits": {
+    "G1": {
+      "reference_file": "data/official/sinchana/reference_bits/bitsG1.txt",
+      "bit_count": 4096,
+      "sha256": "4bb2799ee91b19dafe7f61cab16f442a2984bb07b40c3c0bb5863e37974579ab",
+      "source_package": "data/_incoming/sinchana_g1_g5_refs.zip",
+      "case_id": "G1",
+      "modulation": "QPSK",
+      "coding": "uncoded"
+    },
+    "G5_uncoded": {
+      "reference_file": "data/official/sinchana/reference_bits/bitsG5.txt",
+      "bit_count": 4096,
+      "sha256": "4bb2799ee91b19dafe7f61cab16f442a2984bb07b40c3c0bb5863e37974579ab",
+      "source_package": "data/_incoming/sinchana_g1_g5_refs.zip",
+      "case_id": "G5_uncoded",
+      "modulation": "2-FSK",
+      "coding": "uncoded"
+    }
+  }
+}

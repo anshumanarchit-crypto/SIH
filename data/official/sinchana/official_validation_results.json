@@ -1,0 +1,4822 @@
+{
+  "schema_version": "spectraq.official_validation.v1",
+  "source_zip": {
+    "filename": "SIH-main (1).zip",
+    "sha256": "91ec2730e98285b3249b1b71e460401f00005228e28a0ad52765f40171c37cca",
+    "size_bytes": 1111860,
+    "received_date": "2026-09-24",
+    "staging_dir": "data/_incoming/sinchana_zip/"
+  },
+  "reference_bits_package": {
+    "filename": "sinchana_g1_g5_refs.zip",
+    "sha256": "4bb2799ee91b19dafe7f61cab16f442a2984bb07b40c3c0bb5863e37974579ab",
+    "received_date": "2026-09-25",
+    "staging_dir": "data/official/sinchana/reference_bits/"
+  },
+  "cases": {
+    "G1": {
+      "capture_path": "data/official/sinchana/golden/G1_QPSK_uncoded.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G1_QPSK_uncoded.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "QPSK",
+        "num_samples": 16384,
+        "num_bits": 4096,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 131072,
+        "cf32_bytes_actual": 131072,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "AVAILABLE",
+        "truth_bit_sha256": "d9a271e61be963f46ccd61ae105969c941cfe34cfe8c1a75678b9f9da9a38402",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\official\\sinchana\\reference_bits\\bitsG1.txt",
+        "reference_bit_count": 4096
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 2048,
+        "output_bits": 4096,
+        "mapping_profile_used": "OCTAVE",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "converged": true,
+          "mean_error": 0.0011787279308517018,
+          "jitter_std": 0.2906639978031685,
+          "symbol_count": 2048,
+          "error_history": [
+            0.4657072543893045,
+            -0.11342518999948645,
+            -0.6369024464491879,
+            0.03905587348724306,
+            0.647574385595408,
+            -0.14280617111620353,
+            0.11306277113023558,
+            -0.07507955891401155,
+            -0.5026595258557872,
+            0.05730290940138167,
+            0.10714621327020996,
+            -0.19830272785268646,
+            0.03244937253441829,
+            0.10391420703404211,
+            0.00973147696707546,
+            0.13952436470271254,
+            0.13086788467380467,
+            0.045616827820381574,
+            0.10729659672968517,
+            0.2082532340960421,
+            -0.1963043341566365,
+            -0.3502328871039284,
+            0.46911164779412273,
+            0.34655159483056813,
+            -0.06597656298206511,
+            -0.14943670845442225,
+            -0.579896160771138,
+            0.3261434981207664,
+            0.3815937857884682,
+            -0.3630718245501309,
+            -0.3540311794869308,
+            0.04457739044968538,
+            0.0933090768591304,
+            -0.15404866076442478,
+            0.5230423059417967,
+            0.12463269225214571,
+            -0.1627740623603962,
+            -0.12422553551045126,
+            -0.0631790253480869,
+            0.3001583702475364,
+            -0.5106678397975383,
+            0.04111355047625026,
+            0.41579833411847766,
+            0.43650929861966503,
+            -0.40875126384570626,
+            -0.3422415328734039,
+            -0.10381023095930869,
+            0.1615283007378655,
+            -0.15019731059545735,
+            0.08821113156755236,
+            0.34450823121912705,
+            -0.3375475216490335,
+            0.09634819964425764,
+            0.03246553890630835,
+            -0.002316990564623478,
+            -0.13931994562641545,
+            0.1773932783413556,
+            0.07280720008345096,
+            0.4387740219433091,
+            0.08822403938656477,
+            -0.22798375063594828,
+            0.020658630816017265,
+            -0.5401851172031961,
+            -0.12355883793620817,
+            0.6044213913129032,
+            0.19077257450310536,
+            0.018027932238118587,
+            -0.23239744843803914,
+            -0.4189335174312947,
+            0.10276869858400486,
+            -0.028783829849271376,
+            0.020854381861416815,
+            0.3504605484827939,
+            0.2818573209742465,
+            -0.08107514298456958,
+            -0.03227356418477054,
+            -0.6068676531547319,
+            -0.1434192630284088,
+            0.3456621029942884,
+            0.07673256416701535,
+            0.08997838183940463,
+            -0.3879351122704854,
+            0.20802552346362885,
+            0.2718687710058813,
+            0.35847690080664674,
+            -0.5491039622668129,
+            -0.4514355521705633,
+            -0.026397897802227163,
+            0.09747998150270885,
+            0.4390361203802084,
+            -0.02876312052951128,
+            -0.4799483875605363,
+            0.2304206132365662,
+            -0.26442265346811544,
+            0.010185213750371284,
+            0.13908731576632236,
+            0.10374818989598651,
+            -0.08048889115339924,
+            -0.02865943712094891,
+            0.10212599871885757
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": true,
+          "coarse_cfo": 7.014534336509301e-06,
+          "fine_cfo": -3.316557870681356e-05,
+          "estimated_cfo": -2.615104437030426e-05,
+          "final_phase": 6.183309181487311,
+          "phase_jitter_std": 0.18709016832395903,
+          "order": 4
+        },
+        "estimated_cfo_rad": -2.615104437030426e-05,
+        "estimated_phase_rad": 6.183309181487311
+      },
+      "decoder_result": {
+        "applicable": false,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": null,
+        "mapping_profile_used": "OCTAVE",
+        "candidate_evaluations": [],
+        "recovered_bits_count": 4096,
+        "source_bit_errors": null,
+        "source_exact_match": false
+      },
+      "overall_status": "DEMODULATED_AND_EVALUATED_AGAINST_REFERENCE",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G1",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "QPSK",
+          "fec": "NONE",
+          "interleaver": "NONE",
+          "bit_count": 4096,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": null
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_NOMINAL_0DEG",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "OCTAVE",
+              "fec_type": "NONE"
+            },
+            "status": "SUPPORTED",
+            "evidence_refs": [
+              "EVID_DEMOD_STATUS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_NOMINAL_0DEG",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "OCTAVE",
+            "fec_type": "NONE"
+          },
+          "status": "SUPPORTED",
+          "evidence_refs": [
+            "EVID_DEMOD_STATUS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 4096,
+          "byte_count": 512,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 2041,
+          "one_count": 2055,
+          "one_density": 0.5017,
+          "empirical_entropy": 1.0,
+          "max_zero_run": 12,
+          "max_one_run": 9,
+          "mean_run_length": 2.02,
+          "total_runs": 2032,
+          "run_length_distribution": {
+            "2": 544,
+            "1": 988,
+            "3": 236,
+            "4": 122,
+            "5": 73,
+            "8": 4,
+            "6": 42,
+            "7": 18,
+            "12": 1,
+            "9": 3,
+            "10": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 512,
+          "unique_byte_count": 222,
+          "printable_ascii_ratio": 0.3691,
+          "ascii_control_ratio": 0.1133,
+          "zero_byte_ratio": 0.002,
+          "high_bit_set_ratio": 0.5176,
+          "byte_entropy": 7.5886,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x50",
+              "byte_int": 80,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0xE7",
+              "byte_int": 231,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0xA9",
+              "byte_int": 169,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0x82",
+              "byte_int": 130,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0x40",
+              "byte_int": 64,
+              "count": 5,
+              "frequency": 0.0098
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (1.0000) and balanced bit density (0.5017), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 2048,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 2048 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "OCTAVE",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'OCTAVE'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (NONE) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (1.0000) and balanced bit density (0.5017), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 1.0,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 1.0000 bits/bit (density=0.5017).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 4096,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 4096 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9352,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": null,
+              "normalized_score": 1.0,
+              "weight": 0.0,
+              "reason": "No FEC configured for transmission.",
+              "source_evidence_ids": []
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": null,
+              "normalized_score": 1.0,
+              "weight": 0.0,
+              "reason": "Re-encode check not applicable (uncoded signal).",
+              "source_evidence_ids": []
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 4096
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G2": {
+      "capture_path": "data/official/sinchana/golden/G2_BPSK_conv_block.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G2_BPSK_conv_block.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "BPSK",
+        "num_samples": 4352,
+        "num_bits": 544,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 34816,
+        "cf32_bytes_actual": 34816,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "55041525ebe9aaaa04c6ed93f5061f14723009b3ae2d07df2595f3f363e6e0ad",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG2.txt",
+        "reference_bit_count": 544
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 544,
+        "output_bits": 544,
+        "mapping_profile_used": "DEFAULT",
+        "selected_rotation_deg": 180.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "converged": true,
+          "mean_error": 0.0035762968475852685,
+          "jitter_std": 0.39961455053968187,
+          "symbol_count": 544,
+          "error_history": [
+            0.5079424654384072,
+            -0.1433435663793465,
+            0.17924051114961045,
+            -0.26080072546466165,
+            -0.09226563417784354,
+            0.5061451127008872,
+            -0.2529361754076589,
+            0.0845926474439893,
+            -0.02267231093418116,
+            -0.044760399162123723,
+            0.11014073426793573,
+            -0.06700029713734641,
+            -0.14063225036162888,
+            0.7613745288834786,
+            0.13707990682741455,
+            -1.1043615586274442,
+            0.09894034111948775,
+            0.11857612859410621,
+            0.17788415203063246,
+            -0.04901895740079852,
+            0.008390740134359736,
+            0.49848528560704825,
+            -0.49806524190604523,
+            0.14173762829731498,
+            0.026387574248066068,
+            -0.22120760623279911,
+            -0.10850575561914505,
+            0.03589470207861024,
+            -0.011231985475085379,
+            -0.11130428111866078,
+            0.21504921923105774,
+            0.8470061265461237,
+            0.19479871888568,
+            -0.11298677033128117,
+            -0.3190933035369191,
+            -1.052798692974389,
+            0.03382198996299291,
+            0.9181358246500274,
+            0.06091476184600092,
+            -0.7566084199260481,
+            0.10388895087735087,
+            0.09960509986380112,
+            -0.1596575312818852,
+            0.05199119613659229,
+            0.02570224560278176,
+            -0.07235870695446736,
+            0.5884037805857835,
+            -0.39156947926285296,
+            -0.003727232508170944,
+            -0.08774603106356701,
+            -0.23910469270903079,
+            -0.06578003071019052,
+            0.6226473752498592,
+            -0.6641356655741418,
+            -0.06614337615403999,
+            0.09460842414534316,
+            0.06473349521618922,
+            0.6624966961764892,
+            -0.7637979013432058,
+            0.126723285247216,
+            -0.09157541552761866,
+            0.0017969148940171669,
+            0.0298974727342272,
+            -0.21993312052938607,
+            1.0869877408847142,
+            0.03500759263882762,
+            -0.9272063893731871,
+            -0.10185187014088368,
+            0.4623172687710035,
+            -0.0002485678213184927,
+            -0.11824121660739267,
+            0.5697648333385685,
+            -0.34836639213172266,
+            -0.06740799170609023,
+            0.07336565050477342,
+            -0.10858696033469087,
+            0.4887358509722736,
+            -0.6756543233008803,
+            -0.13112332396804321,
+            0.06412089133617613,
+            -0.014684379078497912,
+            0.9287586896381346,
+            -0.11698113920253468,
+            -0.8096587102519569,
+            0.11098533708895447,
+            0.9886235218924528,
+            0.29696651870910584,
+            -0.13249935245629316,
+            -0.7675081163081527,
+            -0.1149918847787644,
+            -0.012589654361876982,
+            0.5515127607284306,
+            -0.7271196026382926,
+            0.05884169200416894,
+            0.03716823096701144,
+            -0.07619255382368495,
+            -0.18423645295658,
+            0.12755923088707496,
+            -0.05284017932627899,
+            0.03479867348278579
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": true,
+          "coarse_cfo": -5.384283538301353e-06,
+          "fine_cfo": 1.0637196984196846e-05,
+          "estimated_cfo": 5.252913445895493e-06,
+          "final_phase": 0.017124348404363304,
+          "phase_jitter_std": 0.12167851189661467,
+          "order": 2
+        },
+        "estimated_cfo_rad": 5.252913445895493e-06,
+        "estimated_phase_rad": 0.017124348404363304
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 180.0,
+        "re_encode_errors": 0,
+        "mapping_profile_used": "DEFAULT",
+        "candidate_evaluations": [
+          {
+            "angle_deg": 0.0,
+            "decoder_success": true,
+            "re_encode_errors": 12
+          },
+          {
+            "angle_deg": 180.0,
+            "decoder_success": true,
+            "re_encode_errors": 0
+          }
+        ],
+        "recovered_bits_count": 266,
+        "source_bit_errors": 0,
+        "source_exact_match": true
+      },
+      "overall_status": "FULLY_DECODED",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G2",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "BPSK",
+          "fec": "CONV_K7_171_133",
+          "interleaver": "BLOCK",
+          "bit_count": 266,
+          "selected_rotation_deg": 180.0,
+          "re_encode_errors": 0
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_ROT_180",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 180.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS",
+              "EVID_REENCODE_ERRORS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 0.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          },
+          {
+            "hypothesis_id": "HYP_ROT_0",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 12.0,
+              "re_encode_consistency": 0.88
+            },
+            "contradictions": [
+              "Re-encode discrepancy (12 errors) at 0.0\u00b0."
+            ],
+            "re_encode_errors": 12,
+            "consistency_fraction": 0.88,
+            "rank": 2
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_ROT_180",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 180.0,
+            "mapping_profile": "DEFAULT",
+            "fec_type": "CONV_K7_171_133"
+          },
+          "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+          "evidence_refs": [
+            "EVID_FEC_SUCCESS",
+            "EVID_REENCODE_ERRORS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_errors": 0.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 266,
+          "byte_count": 33,
+          "is_byte_aligned": false,
+          "remainder_bits": 2,
+          "zero_count": 148,
+          "one_count": 118,
+          "one_density": 0.4436,
+          "empirical_entropy": 0.9908,
+          "max_zero_run": 11,
+          "max_one_run": 7,
+          "mean_run_length": 2.0,
+          "total_runs": 133,
+          "run_length_distribution": {
+            "1": 69,
+            "3": 17,
+            "2": 35,
+            "6": 2,
+            "4": 3,
+            "5": 2,
+            "7": 3,
+            "11": 1,
+            "10": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 33,
+          "unique_byte_count": 29,
+          "printable_ascii_ratio": 0.4848,
+          "ascii_control_ratio": 0.0606,
+          "zero_byte_ratio": 0.0303,
+          "high_bit_set_ratio": 0.4545,
+          "byte_entropy": 4.802,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x45",
+              "byte_int": 69,
+              "count": 2,
+              "frequency": 0.0606
+            },
+            {
+              "byte_hex": "0x47",
+              "byte_int": 71,
+              "count": 2,
+              "frequency": 0.0606
+            },
+            {
+              "byte_hex": "0xC9",
+              "byte_int": 201,
+              "count": 2,
+              "frequency": 0.0606
+            },
+            {
+              "byte_hex": "0xDC",
+              "byte_int": 220,
+              "count": 2,
+              "frequency": 0.0606
+            },
+            {
+              "byte_hex": "0x28",
+              "byte_int": 40,
+              "count": 1,
+              "frequency": 0.0303
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9908) and balanced bit density (0.4436), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 544,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 544 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "DEFAULT",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'DEFAULT'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (CONV_K7_171_133) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REENCODE_ERRORS",
+            "category": "REENCODE",
+            "metric": "re_encode_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.re_encode_errors",
+            "reliability": "HIGH",
+            "interpretation": "Forward re-encoding of decoded payload matches channel bits with 0 errors.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9908) and balanced bit density (0.4436), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9908,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9908 bits/bit (density=0.4436).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 544,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 544 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9549,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": 0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Re-encoded payload identically matches demapped channel bits (0 bit errors).",
+              "source_evidence_ids": [
+                "EVID_REENCODE_ERRORS"
+              ]
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 544
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G3": {
+      "capture_path": "data/official/sinchana/golden/G3_8PSK_RS_diagonal.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G3_8PSK_RS_diagonal.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "8PSK",
+        "num_samples": 5440,
+        "num_bits": 2040,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 43520,
+        "cf32_bytes_actual": 43520,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "8b7f4de465dfc2133392c1d3452189cc7fd34b3be08ec550e76e4e4227b0f9d5",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG3.txt",
+        "reference_bit_count": 2040
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 680,
+        "output_bits": 2040,
+        "mapping_profile_used": "OCTAVE",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "converged": true,
+          "mean_error": 0.004526810797420378,
+          "jitter_std": 0.2991300935734884,
+          "symbol_count": 680,
+          "error_history": [
+            0.4802463975796004,
+            0.7469528971517373,
+            -0.3504861672168297,
+            0.04662148959682644,
+            -0.10706004291454435,
+            -0.07370374241299368,
+            -0.1344489166667204,
+            0.46907021919674047,
+            -0.10045242186198677,
+            -0.3290310148269684,
+            -0.04671053119598405,
+            0.5070746818585794,
+            0.10889852320743554,
+            -0.6436635795493162,
+            -0.1164778923353274,
+            0.3134263804483589,
+            0.20520737169690195,
+            -0.2260729203626879,
+            -0.14600281509557267,
+            0.1834347142961621,
+            -0.06791455494413581,
+            0.2051887942243335,
+            0.23092689319930226,
+            -0.2792201886548742,
+            -0.13296181294176768,
+            0.3058245470058102,
+            0.41963821953021,
+            -0.4487013950584679,
+            0.09280742026537869,
+            0.40927340197859874,
+            -0.048575146579677986,
+            -0.025411223391716517,
+            -0.22563295271649675,
+            0.09314389645695587,
+            0.011386857217232899,
+            -0.1623966654878666,
+            -0.9085504520124449,
+            0.004420193029361546,
+            -0.13585363563460925,
+            0.3249270771078097,
+            -0.09541081824214889,
+            -0.044571206342599035,
+            0.31797994068045954,
+            0.30401981804334427,
+            -0.15250982444427558,
+            -0.24380274377688527,
+            0.188948629720791,
+            -0.3235687671682006,
+            -0.3026275691481311,
+            0.07656368656613464,
+            0.12202933228669227,
+            -0.06690985206937342,
+            0.09940209930721014,
+            -0.016238585102528236,
+            -0.09915370896499276,
+            0.17817037707944933,
+            -0.3988923948100874,
+            0.24565342047178407,
+            0.21989273286848984,
+            0.07529994895759717,
+            -0.34554561682192897,
+            -0.023011857002364133,
+            0.3943972312841048,
+            -0.20901382363657203,
+            -0.12214337928536412,
+            -0.13822213317209786,
+            -0.018143057328933274,
+            0.12156366635655486,
+            -0.16478720155569923,
+            0.06733247960974603,
+            -0.054626477061306355,
+            0.21342679773749562,
+            0.1336757138226814,
+            -0.581908706104237,
+            0.1184600239407384,
+            0.4127182921717003,
+            -0.24233148828285628,
+            0.02010055264734739,
+            0.055452271592184334,
+            -0.15307687385525526,
+            0.3462280603130051,
+            0.0035494417087759134,
+            -0.4832942012910615,
+            -0.029878629827290906,
+            0.2579209314067161,
+            -0.029704192225884635,
+            -0.03612757003627243,
+            -0.013036734114443616,
+            0.2406220064449479,
+            0.450852008079999,
+            0.01505376694607033,
+            -0.2237182559025896,
+            -0.37782482489173785,
+            0.38632235664834935,
+            0.137686355537236,
+            0.059988122676067734,
+            -0.13042519421262774,
+            -0.8219230448511641,
+            -0.09907763375219272,
+            0.4489289803541401
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": true,
+          "coarse_cfo": -0.00010698325126026771,
+          "fine_cfo": 0.00011637617061240243,
+          "estimated_cfo": 9.392919352134725e-06,
+          "final_phase": 0.46312409603876864,
+          "phase_jitter_std": 0.13277109363766545,
+          "order": 8
+        },
+        "estimated_cfo_rad": 9.392919352134725e-06,
+        "estimated_phase_rad": 0.46312409603876864
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": 0,
+        "mapping_profile_used": "OCTAVE",
+        "candidate_evaluations": [
+          {
+            "angle_deg": 0.0,
+            "decoder_success": true,
+            "re_encode_errors": 0
+          }
+        ],
+        "recovered_bits_count": 1784,
+        "source_bit_errors": 0,
+        "source_exact_match": true
+      },
+      "overall_status": "FULLY_DECODED",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G3",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "8-PSK",
+          "fec": "RS_255_223",
+          "interleaver": "DIAGONAL",
+          "bit_count": 1784,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": 0
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_ROT_0",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "OCTAVE",
+              "fec_type": "RS_255_223"
+            },
+            "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS",
+              "EVID_REENCODE_ERRORS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 0.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_ROT_0",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "OCTAVE",
+            "fec_type": "RS_255_223"
+          },
+          "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+          "evidence_refs": [
+            "EVID_FEC_SUCCESS",
+            "EVID_REENCODE_ERRORS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_errors": 0.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 1784,
+          "byte_count": 223,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 857,
+          "one_count": 927,
+          "one_density": 0.5196,
+          "empirical_entropy": 0.9989,
+          "max_zero_run": 8,
+          "max_one_run": 9,
+          "mean_run_length": 1.98,
+          "total_runs": 901,
+          "run_length_distribution": {
+            "2": 236,
+            "3": 96,
+            "1": 449,
+            "4": 64,
+            "8": 6,
+            "5": 36,
+            "7": 4,
+            "6": 9,
+            "9": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 223,
+          "unique_byte_count": 158,
+          "printable_ascii_ratio": 0.417,
+          "ascii_control_ratio": 0.1076,
+          "zero_byte_ratio": 0.009,
+          "high_bit_set_ratio": 0.4753,
+          "byte_entropy": 7.1683,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x87",
+              "byte_int": 135,
+              "count": 4,
+              "frequency": 0.0179
+            },
+            {
+              "byte_hex": "0x0B",
+              "byte_int": 11,
+              "count": 3,
+              "frequency": 0.0135
+            },
+            {
+              "byte_hex": "0x5F",
+              "byte_int": 95,
+              "count": 3,
+              "frequency": 0.0135
+            },
+            {
+              "byte_hex": "0x3D",
+              "byte_int": 61,
+              "count": 3,
+              "frequency": 0.0135
+            },
+            {
+              "byte_hex": "0x7C",
+              "byte_int": 124,
+              "count": 3,
+              "frequency": 0.0135
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9989) and balanced bit density (0.5196), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 680,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 680 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "OCTAVE",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'OCTAVE'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (RS_255_223) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REENCODE_ERRORS",
+            "category": "REENCODE",
+            "metric": "re_encode_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.re_encode_errors",
+            "reliability": "HIGH",
+            "interpretation": "Forward re-encoding of decoded payload matches channel bits with 0 errors.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9989) and balanced bit density (0.5196), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9989,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9989 bits/bit (density=0.5196).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 2040,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 2040 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9549,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": 0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Re-encoded payload identically matches demapped channel bits (0 bit errors).",
+              "source_evidence_ids": [
+                "EVID_REENCODE_ERRORS"
+              ]
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 2040
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G4": {
+      "capture_path": "data/official/sinchana/golden/G4_16QAM_LDPC_pseudorandom.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G4_16QAM_LDPC_pseudorandom.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "16QAM",
+        "num_samples": 192,
+        "num_bits": 96,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 1536,
+        "cf32_bytes_actual": 1536,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "50330a9109223e2466ddd9cf5f7002b201a188aa2c28067f1993acebc308811e",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG4.txt",
+        "reference_bit_count": 96
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 24,
+        "output_bits": 96,
+        "mapping_profile_used": "OCTAVE",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "converged": true,
+          "mean_error": 0.07880612524400975,
+          "jitter_std": 0.8307097276116006,
+          "symbol_count": 24,
+          "error_history": [
+            0.9951921435916959,
+            0.21526870674577464,
+            0.3160216415492823,
+            -0.2300292977338993,
+            -0.6423682354185855,
+            0.09251268130870127,
+            -0.763541775029404,
+            -0.018752385668011448,
+            1.3300655004697113,
+            -1.2394681199612037,
+            -0.14042099342542444,
+            1.5901495350169321,
+            -1.2921087521647106,
+            -0.1050417909836924,
+            -0.14459574052808882,
+            -0.0343136460911049,
+            0.2740692832915695,
+            1.0790446693592581,
+            0.9639082195437352,
+            -1.1088177204353855,
+            -0.6119494659340596,
+            1.555621496151365,
+            -0.26790507304223077
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": true,
+          "coarse_cfo": 0.0,
+          "fine_cfo": -8.324976189638593e-06,
+          "estimated_cfo": -8.324976189638593e-06,
+          "final_phase": 0.00024241152039431994,
+          "phase_jitter_std": 0.06572149247364244,
+          "order": 16
+        },
+        "estimated_cfo_rad": -8.324976189638593e-06,
+        "estimated_phase_rad": 0.00024241152039431994
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": 0,
+        "mapping_profile_used": "OCTAVE",
+        "candidate_evaluations": [
+          {
+            "angle_deg": 0.0,
+            "decoder_success": true,
+            "re_encode_errors": 0
+          }
+        ],
+        "recovered_bits_count": 50,
+        "source_bit_errors": 0,
+        "source_exact_match": true
+      },
+      "overall_status": "FULLY_DECODED",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G4",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "16-QAM",
+          "fec": "LDPC",
+          "interleaver": "PSEUDORANDOM",
+          "bit_count": 50,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": 0
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_ROT_0",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "OCTAVE",
+              "fec_type": "LDPC"
+            },
+            "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS",
+              "EVID_REENCODE_ERRORS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 0.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_ROT_0",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "OCTAVE",
+            "fec_type": "LDPC"
+          },
+          "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+          "evidence_refs": [
+            "EVID_FEC_SUCCESS",
+            "EVID_REENCODE_ERRORS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_errors": 0.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 50,
+          "byte_count": 6,
+          "is_byte_aligned": false,
+          "remainder_bits": 2,
+          "zero_count": 27,
+          "one_count": 23,
+          "one_density": 0.46,
+          "empirical_entropy": 0.9954,
+          "max_zero_run": 5,
+          "max_one_run": 5,
+          "mean_run_length": 2.17,
+          "total_runs": 23,
+          "run_length_distribution": {
+            "1": 9,
+            "2": 6,
+            "5": 2,
+            "4": 1,
+            "3": 5
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 6,
+          "unique_byte_count": 6,
+          "printable_ascii_ratio": 0.5,
+          "ascii_control_ratio": 0.0,
+          "zero_byte_ratio": 0.0,
+          "high_bit_set_ratio": 0.5,
+          "byte_entropy": 2.585,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x23",
+              "byte_int": 35,
+              "count": 1,
+              "frequency": 0.1667
+            },
+            {
+              "byte_hex": "0x5C",
+              "byte_int": 92,
+              "count": 1,
+              "frequency": 0.1667
+            },
+            {
+              "byte_hex": "0x69",
+              "byte_int": 105,
+              "count": 1,
+              "frequency": 0.1667
+            },
+            {
+              "byte_hex": "0xB8",
+              "byte_int": 184,
+              "count": 1,
+              "frequency": 0.1667
+            },
+            {
+              "byte_hex": "0xF0",
+              "byte_int": 240,
+              "count": 1,
+              "frequency": 0.1667
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9954) and balanced bit density (0.4600), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 24,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 24 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "OCTAVE",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'OCTAVE'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (LDPC) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REENCODE_ERRORS",
+            "category": "REENCODE",
+            "metric": "re_encode_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.re_encode_errors",
+            "reliability": "HIGH",
+            "interpretation": "Forward re-encoding of decoded payload matches channel bits with 0 errors.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9954) and balanced bit density (0.4600), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9954,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9954 bits/bit (density=0.4600).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 96,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 96 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9549,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": 0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Re-encoded payload identically matches demapped channel bits (0 bit errors).",
+              "source_evidence_ids": [
+                "EVID_REENCODE_ERRORS"
+              ]
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 96
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G5_uncoded": {
+      "capture_path": "data/official/sinchana/golden/G5_2FSK_uncoded.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G5_2FSK_uncoded.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "2-FSK",
+        "num_samples": 32768,
+        "num_bits": 4096,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 262144,
+        "cf32_bytes_actual": 262144,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "AVAILABLE",
+        "truth_bit_sha256": "d9a271e61be963f46ccd61ae105969c941cfe34cfe8c1a75678b9f9da9a38402",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\official\\sinchana\\reference_bits\\bitsG5.txt",
+        "reference_bit_count": 4096
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 4096,
+        "output_bits": 4096,
+        "mapping_profile_used": "DEFAULT",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "fsk_timing_lock": true
+        },
+        "carrier_status": {
+          "fsk_carrier_tracking": true
+        },
+        "estimated_cfo_rad": 0.6287655217820429,
+        "estimated_phase_rad": 0.0
+      },
+      "decoder_result": {
+        "applicable": false,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": null,
+        "mapping_profile_used": "DEFAULT",
+        "candidate_evaluations": [],
+        "recovered_bits_count": 4096,
+        "source_bit_errors": null,
+        "source_exact_match": false
+      },
+      "overall_status": "DEMODULATED_AND_EVALUATED_AGAINST_REFERENCE",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G5_uncoded",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "2-FSK",
+          "fec": "NONE",
+          "interleaver": "NONE",
+          "bit_count": 4096,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": null
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_NOMINAL_0DEG",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "NONE"
+            },
+            "status": "SUPPORTED",
+            "evidence_refs": [
+              "EVID_DEMOD_STATUS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_NOMINAL_0DEG",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "DEFAULT",
+            "fec_type": "NONE"
+          },
+          "status": "SUPPORTED",
+          "evidence_refs": [
+            "EVID_DEMOD_STATUS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 4096,
+          "byte_count": 512,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 2041,
+          "one_count": 2055,
+          "one_density": 0.5017,
+          "empirical_entropy": 1.0,
+          "max_zero_run": 12,
+          "max_one_run": 9,
+          "mean_run_length": 2.02,
+          "total_runs": 2032,
+          "run_length_distribution": {
+            "2": 544,
+            "1": 988,
+            "3": 236,
+            "4": 122,
+            "5": 73,
+            "8": 4,
+            "6": 42,
+            "7": 18,
+            "12": 1,
+            "9": 3,
+            "10": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 512,
+          "unique_byte_count": 222,
+          "printable_ascii_ratio": 0.3691,
+          "ascii_control_ratio": 0.1133,
+          "zero_byte_ratio": 0.002,
+          "high_bit_set_ratio": 0.5176,
+          "byte_entropy": 7.5886,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x50",
+              "byte_int": 80,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0xE7",
+              "byte_int": 231,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0xA9",
+              "byte_int": 169,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0x82",
+              "byte_int": 130,
+              "count": 6,
+              "frequency": 0.0117
+            },
+            {
+              "byte_hex": "0x40",
+              "byte_int": 64,
+              "count": 5,
+              "frequency": 0.0098
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (1.0000) and balanced bit density (0.5017), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 4096,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 4096 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "DEFAULT",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'DEFAULT'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (NONE) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (1.0000) and balanced bit density (0.5017), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 1.0,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 1.0000 bits/bit (density=0.5017).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 4096,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 4096 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9352,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": null,
+              "normalized_score": 1.0,
+              "weight": 0.0,
+              "reason": "No FEC configured for transmission.",
+              "source_evidence_ids": []
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": null,
+              "normalized_score": 1.0,
+              "weight": 0.0,
+              "reason": "Re-encode check not applicable (uncoded signal).",
+              "source_evidence_ids": []
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 4096
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G5_coded": {
+      "capture_path": "data/official/sinchana/golden/G5_2FSK_RS_Conv_interleaved.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G5_2FSK_RS_Conv_interleaved.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "2-FSK",
+        "num_samples": 33216,
+        "num_bits": 4152,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 265728,
+        "cf32_bytes_actual": 265728,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "61a055c3dce729342da8f86da7fb45119b9fd6d5f48d503eb44ccfc2aa1093a4",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG5.txt",
+        "reference_bit_count": 4152
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 4152,
+        "output_bits": 4152,
+        "mapping_profile_used": "DEFAULT",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "fsk_timing_lock": true
+        },
+        "carrier_status": {
+          "fsk_carrier_tracking": true
+        },
+        "estimated_cfo_rad": -283.07519067774047,
+        "estimated_phase_rad": 0.0
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": null,
+        "mapping_profile_used": "DEFAULT",
+        "candidate_evaluations": [],
+        "recovered_bits_count": 1784,
+        "source_bit_errors": 0,
+        "source_exact_match": true
+      },
+      "overall_status": "FULLY_DECODED",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G5_coded",
+        "overall_status": "SUPPORTED",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "2-FSK",
+          "fec": "CONCAT_RS_CONV",
+          "interleaver": "CONVOLUTIONAL",
+          "bit_count": 1784,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": null
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_NOMINAL_0DEG",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONCAT_RS_CONV"
+            },
+            "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+            "evidence_refs": [
+              "EVID_DEMOD_STATUS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_NOMINAL_0DEG",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "DEFAULT",
+            "fec_type": "CONCAT_RS_CONV"
+          },
+          "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+          "evidence_refs": [
+            "EVID_DEMOD_STATUS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 1784,
+          "byte_count": 223,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 883,
+          "one_count": 901,
+          "one_density": 0.505,
+          "empirical_entropy": 0.9999,
+          "max_zero_run": 13,
+          "max_one_run": 14,
+          "mean_run_length": 1.97,
+          "total_runs": 904,
+          "run_length_distribution": {
+            "2": 223,
+            "1": 469,
+            "4": 56,
+            "3": 101,
+            "5": 27,
+            "13": 1,
+            "9": 3,
+            "7": 11,
+            "6": 11,
+            "10": 1,
+            "14": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 223,
+          "unique_byte_count": 147,
+          "printable_ascii_ratio": 0.3722,
+          "ascii_control_ratio": 0.0673,
+          "zero_byte_ratio": 0.0,
+          "high_bit_set_ratio": 0.5605,
+          "byte_entropy": 7.0484,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x11",
+              "byte_int": 17,
+              "count": 4,
+              "frequency": 0.0179
+            },
+            {
+              "byte_hex": "0x5F",
+              "byte_int": 95,
+              "count": 4,
+              "frequency": 0.0179
+            },
+            {
+              "byte_hex": "0xC2",
+              "byte_int": 194,
+              "count": 4,
+              "frequency": 0.0179
+            },
+            {
+              "byte_hex": "0x2E",
+              "byte_int": 46,
+              "count": 3,
+              "frequency": 0.0135
+            },
+            {
+              "byte_hex": "0x4A",
+              "byte_int": 74,
+              "count": 3,
+              "frequency": 0.0135
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9999) and balanced bit density (0.5050), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 4152,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 4152 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "DEFAULT",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'DEFAULT'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (CONCAT_RS_CONV) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9999) and balanced bit density (0.5050), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9999,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9999 bits/bit (density=0.5050).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 4152,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 4152 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.903,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": null,
+              "normalized_score": 0.0,
+              "weight": 0.05,
+              "reason": "Re-encode validation could not be executed.",
+              "source_evidence_ids": []
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 4152
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G6": {
+      "capture_path": "data/official/sinchana/golden/G6_BPSK_conv_interleaved.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G6_BPSK_conv_interleaved.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "BPSK",
+        "num_samples": 4384,
+        "num_bits": 548,
+        "sps": 8,
+        "snr_db": 15,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 35072,
+        "cf32_bytes_actual": 35072,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "90a4572a8291285359e08443fc6b52e0489a3f99fc910e6c6e92b5e9d22a6775",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG6.txt",
+        "reference_bit_count": 548
+      },
+      "demod_result": {
+        "status": "SUCCESS",
+        "output_symbols": 548,
+        "output_bits": 548,
+        "mapping_profile_used": "DEFAULT",
+        "selected_rotation_deg": 180.0,
+        "demod_bit_errors": 0,
+        "demod_ber": 0.0,
+        "timing_status": {
+          "converged": true,
+          "mean_error": -0.0010614237458801427,
+          "jitter_std": 0.33546764623873554,
+          "symbol_count": 548,
+          "error_history": [
+            0.4962037116619433,
+            -0.11776616183930089,
+            0.04100203809902675,
+            0.10442303034762214,
+            -0.005753368102131832,
+            -0.006524075876481018,
+            -0.04183673655984309,
+            0.475944004068255,
+            -0.2628353198354936,
+            -0.16783300947086924,
+            0.057198122161580774,
+            0.36994644359309486,
+            -0.4541773714263669,
+            0.060363330496078796,
+            -0.07756751710938013,
+            -0.18154823572846995,
+            -0.07744879619595313,
+            0.270599371352006,
+            0.07878699037823185,
+            -0.11989838965552418,
+            0.5388877333589609,
+            -0.8548200995866457,
+            -0.09784088783231462,
+            0.7134309361241048,
+            -0.4198243755920443,
+            0.13351092207178586,
+            -0.07333086740659185,
+            0.001719060346796611,
+            0.40501005613326624,
+            -0.8724493750244895,
+            0.17791705123535678,
+            0.818795346340914,
+            -0.002258306283541237,
+            -0.9986804692544324,
+            -0.045029993564215824,
+            0.9723186044013419,
+            0.4752853959553595,
+            -0.05996712180366565,
+            -0.3955881966695858,
+            -1.1013209780487687,
+            0.12540124864353103,
+            0.848112384574734,
+            -0.3548940247015373,
+            -0.06113520465667879,
+            -0.01548029023726458,
+            0.5935784302005496,
+            -0.08336346107773551,
+            -0.928926551240734,
+            -0.015709398049718794,
+            0.8957666769860971,
+            -0.0650423631382816,
+            -0.9184492711007846,
+            0.16107914641451526,
+            0.9750951511410528,
+            0.3662784370225575,
+            -0.13875504644895575,
+            -0.6667521261894123,
+            -0.05633161063574258,
+            0.09790538764746075,
+            -0.1545916797407659,
+            -0.09910147502391178,
+            -0.02555700720189626,
+            -0.040443767320992335,
+            0.08145023242338478,
+            -0.1177490091749132,
+            -0.17892200106321404,
+            0.03757229735142271,
+            0.5422550792650144,
+            -0.45637614837870394,
+            0.1526880044321933,
+            0.0012756242601874134,
+            -0.2739229264610866,
+            -0.04772427701014059,
+            0.19778711160081455,
+            0.02570974915717818,
+            0.03437883381623772,
+            -0.05960203657033353,
+            0.0673866067690243,
+            -0.08757940007891489,
+            0.061688714496143965,
+            -0.25991765104206377,
+            0.03562337016174773,
+            0.5784713589379185,
+            -0.5132108613981854,
+            0.21173240287038256,
+            -0.010976165519272338,
+            -0.1917770671335263,
+            0.6880450475429658,
+            -0.3680626832710294,
+            0.12703044826652568,
+            -0.009335471208167096,
+            -0.18973750321339736,
+            0.6639819908640376,
+            -0.5787249563355374,
+            0.1224081003906933,
+            -0.1338107158494256,
+            0.10733442348992081,
+            -0.042245902904312536,
+            -0.013686713164671549,
+            0.6887780484197509
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": true,
+          "coarse_cfo": 3.888916510628982e-05,
+          "fine_cfo": -8.084285295172239e-05,
+          "estimated_cfo": -4.195368784543257e-05,
+          "final_phase": 6.140135691219603,
+          "phase_jitter_std": 0.12848008810992795,
+          "order": 2
+        },
+        "estimated_cfo_rad": -4.195368784543257e-05,
+        "estimated_phase_rad": 6.140135691219603
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 180.0,
+        "re_encode_errors": 0,
+        "mapping_profile_used": "DEFAULT",
+        "candidate_evaluations": [
+          {
+            "angle_deg": 0.0,
+            "decoder_success": true,
+            "re_encode_errors": 36
+          },
+          {
+            "angle_deg": 180.0,
+            "decoder_success": true,
+            "re_encode_errors": 0
+          }
+        ],
+        "recovered_bits_count": 256,
+        "source_bit_errors": 0,
+        "source_exact_match": true
+      },
+      "overall_status": "FULLY_DECODED",
+      "first_failed_stage": "NONE_STAGE_PASSED",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G6",
+        "overall_status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": true,
+          "modulation": "BPSK",
+          "fec": "CONV_K7_171_133",
+          "interleaver": "CONVOLUTIONAL",
+          "bit_count": 256,
+          "selected_rotation_deg": 180.0,
+          "re_encode_errors": 0
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_ROT_180",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 180.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS",
+              "EVID_REENCODE_ERRORS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 0.0,
+              "re_encode_consistency": 1.0
+            },
+            "contradictions": [],
+            "re_encode_errors": 0,
+            "consistency_fraction": 1.0,
+            "rank": 1
+          },
+          {
+            "hypothesis_id": "HYP_ROT_0",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 36.0,
+              "re_encode_consistency": 0.64
+            },
+            "contradictions": [
+              "Re-encode discrepancy (36 errors) at 0.0\u00b0."
+            ],
+            "re_encode_errors": 36,
+            "consistency_fraction": 0.64,
+            "rank": 2
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_ROT_180",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 180.0,
+            "mapping_profile": "DEFAULT",
+            "fec_type": "CONV_K7_171_133"
+          },
+          "status": "CONFIRMED_BY_MULTIPLE_EVIDENCE",
+          "evidence_refs": [
+            "EVID_FEC_SUCCESS",
+            "EVID_REENCODE_ERRORS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_errors": 0.0,
+            "re_encode_consistency": 1.0
+          },
+          "contradictions": [],
+          "re_encode_errors": 0,
+          "consistency_fraction": 1.0,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 256,
+          "byte_count": 32,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 133,
+          "one_count": 123,
+          "one_density": 0.4805,
+          "empirical_entropy": 0.9989,
+          "max_zero_run": 9,
+          "max_one_run": 7,
+          "mean_run_length": 1.98,
+          "total_runs": 129,
+          "run_length_distribution": {
+            "4": 6,
+            "1": 60,
+            "2": 41,
+            "5": 4,
+            "3": 14,
+            "9": 1,
+            "6": 2,
+            "7": 1
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 32,
+          "unique_byte_count": 32,
+          "printable_ascii_ratio": 0.3125,
+          "ascii_control_ratio": 0.0938,
+          "zero_byte_ratio": 0.0,
+          "high_bit_set_ratio": 0.5938,
+          "byte_entropy": 5.0,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x06",
+              "byte_int": 6,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x0B",
+              "byte_int": 11,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x10",
+              "byte_int": 16,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x26",
+              "byte_int": 38,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x31",
+              "byte_int": 49,
+              "count": 1,
+              "frequency": 0.0312
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9989) and balanced bit density (0.4805), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 15.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 15.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 548,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 548 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "DEFAULT",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'DEFAULT'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (CONV_K7_171_133) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REENCODE_ERRORS",
+            "category": "REENCODE",
+            "metric": "re_encode_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.re_encode_errors",
+            "reliability": "HIGH",
+            "interpretation": "Forward re-encoding of decoded payload matches channel bits with 0 errors.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9989) and balanced bit density (0.4805), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9989,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9989 bits/bit (density=0.4805).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 548,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 548 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 0,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 0 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.0,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [],
+        "confidence": {
+          "value": 0.9549,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 15.0,
+              "normalized_score": 0.6875,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (15.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": 0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Re-encoded payload identically matches demapped channel bits (0 bit errors).",
+              "source_evidence_ids": [
+                "EVID_REENCODE_ERRORS"
+              ]
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=0.0000e+00.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {},
+          "uncertainty_reasons": []
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.0,
+          "bit_errors": 0,
+          "reference_bit_count": 548
+        },
+        "uncertainty_reasons": [],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    },
+    "G7": {
+      "capture_path": "data/official/sinchana/golden/G7_QPSK_conv_near_threshold.cf32",
+      "truth_metadata_path": "data/official/sinchana/golden/G7_QPSK_conv_near_threshold.truth.json",
+      "metadata_validation": {
+        "schema_version": "spectraq.truth.v1",
+        "modulation": "QPSK",
+        "num_samples": 2096,
+        "num_bits": 524,
+        "sps": 8,
+        "snr_db": 6,
+        "missing_fields": []
+      },
+      "iq_format_validation": {
+        "cf32_bytes_expected": 16768,
+        "cf32_bytes_actual": 16768,
+        "byte_count_match": true,
+        "iq_convention": "I+jQ",
+        "format_string": "little_endian_float32_interleaved_IQ"
+      },
+      "bit_reference_validation": {
+        "reference_status": "VERIFIED",
+        "truth_bit_sha256": "a53edef738af3bae11f6f54331c6367231dff81498140155fca0fde340036b33",
+        "tx_hash_match": true,
+        "external_reference_available": true,
+        "reference_file": "data\\handoff\\bitsG7.txt",
+        "reference_bit_count": 524
+      },
+      "demod_result": {
+        "status": "NON_CONVERGED",
+        "output_symbols": 262,
+        "output_bits": 524,
+        "mapping_profile_used": "DEFAULT",
+        "selected_rotation_deg": 0.0,
+        "demod_bit_errors": 240,
+        "demod_ber": 0.4580152671755725,
+        "timing_status": {
+          "converged": true,
+          "mean_error": -0.009924002908007646,
+          "jitter_std": 0.35680703911192235,
+          "symbol_count": 262,
+          "error_history": [
+            0.3225601809829617,
+            -0.22436110856696279,
+            -0.20951776487937537,
+            -0.006412633869798498,
+            0.17812016940410413,
+            -0.08963616492204077,
+            0.6209629152426633,
+            -0.500634157315341,
+            -0.21227516526729612,
+            0.05252891463985568,
+            0.31860748939215544,
+            -0.05796735589038578,
+            -0.7079336783678022,
+            0.19484132670290624,
+            0.18112422520354887,
+            -0.46079323946455264,
+            0.33659737134640766,
+            0.13097818338477085,
+            -0.4725748325296103,
+            -0.40035889615427145,
+            0.9497053001767566,
+            -0.4653049978971581,
+            0.1274999782049031,
+            -0.011273864929535402,
+            -0.15872344848869177,
+            0.23672540153290605,
+            -0.11354791234594025,
+            -0.1150566469053517,
+            -0.24096131497639622,
+            0.6796154477615965,
+            -0.34607585878692004,
+            -0.12638218498075243,
+            -0.007387527971363595,
+            0.3929519033171326,
+            -0.21819477490746306,
+            -0.475560995014348,
+            -0.06978953850355109,
+            1.2799771555076649,
+            -0.68215523579004,
+            -0.2600392106940744,
+            0.030075630300103462,
+            0.7665926031609809,
+            -0.14721915621104886,
+            -0.6269922323171956,
+            -0.7156797421478533,
+            -0.31671793663728687,
+            0.9375993016434803,
+            0.09706499512803599,
+            -0.3065433368526154,
+            -0.25695247064495524,
+            0.0699665604455844,
+            0.3218105242694914,
+            -0.22485280080095377,
+            0.32180824964737054,
+            0.24547669039240694,
+            -0.061313293146630976,
+            -0.18098717365604938,
+            -0.17452372647038106,
+            -0.09624554807310536,
+            -0.12053079469708275,
+            0.5632568122392381,
+            -0.3525190210844888,
+            0.4363573604111838,
+            -0.5405189465153767,
+            -0.059653699572370794,
+            -0.6989243052513678,
+            0.5846373054494557,
+            1.286170477801039,
+            0.046289519967605386,
+            -0.22147700669802933,
+            -0.02529203992669875,
+            -0.15340266419553011,
+            0.10469199214016515,
+            -0.6752479147887946,
+            0.1865546062191764,
+            -0.16700697091979827,
+            0.060373820655118586,
+            -0.02222384321131341,
+            0.825265282151777,
+            -0.03589927048360853,
+            0.06142858454485574,
+            -0.4755218910960715,
+            0.06302405228861142,
+            0.09237696904732882,
+            -0.368854222813639,
+            -0.07138675775842729,
+            0.16753631185697707,
+            0.054262978647255766,
+            0.05247135011903947,
+            -0.03190324765831741,
+            0.16289649127887182,
+            -0.15213974775084105,
+            0.2792139087735307,
+            -0.19722749519708813,
+            -0.013657940274628744,
+            0.247366769900084,
+            -0.7657315274703727,
+            0.20843042587839655,
+            0.6957169881601502,
+            0.3942080489325362
+          ],
+          "nominal_sps": 8
+        },
+        "carrier_status": {
+          "converged": false,
+          "coarse_cfo": 0.0007125326418110861,
+          "fine_cfo": -0.000693250051153455,
+          "estimated_cfo": 1.928259065763112e-05,
+          "final_phase": 5.136125421563598,
+          "phase_jitter_std": 0.4865271654362812,
+          "order": 4
+        },
+        "estimated_cfo_rad": 1.928259065763112e-05,
+        "estimated_phase_rad": 5.136125421563598
+      },
+      "decoder_result": {
+        "applicable": true,
+        "pipeline_status": "SUCCESS",
+        "decoder_success": true,
+        "selected_rotation_deg": 0.0,
+        "re_encode_errors": 96,
+        "mapping_profile_used": "DEFAULT",
+        "candidate_evaluations": [
+          {
+            "angle_deg": 0.0,
+            "decoder_success": true,
+            "re_encode_errors": 96
+          },
+          {
+            "angle_deg": 90.0,
+            "decoder_success": true,
+            "re_encode_errors": 248
+          },
+          {
+            "angle_deg": 180.0,
+            "decoder_success": true,
+            "re_encode_errors": 120
+          },
+          {
+            "angle_deg": 270.0,
+            "decoder_success": true,
+            "re_encode_errors": 204
+          }
+        ],
+        "recovered_bits_count": 256,
+        "source_bit_errors": 125,
+        "source_exact_match": false
+      },
+      "overall_status": "FAILED_TO_DECODE_NEAR_THRESHOLD_STRESS_CASE",
+      "first_failed_stage": "PHYSICAL_LAYER_NEAR_THRESHOLD_6DB_STRESS_LIMIT",
+      "phase3_evidence": {
+        "schema_version": "spectralq-decoder-evidence-v1",
+        "case_id": "G7",
+        "overall_status": "FAILED_TO_DECODE_NEAR_THRESHOLD_STRESS_CASE",
+        "decoder": {
+          "status": "SUCCESS",
+          "success": false,
+          "modulation": "QPSK",
+          "fec": "CONV_K7_171_133",
+          "interleaver": "NONE",
+          "bit_count": 256,
+          "selected_rotation_deg": 0.0,
+          "re_encode_errors": 96
+        },
+        "candidate_hypotheses": [
+          {
+            "hypothesis_id": "HYP_ROT_0",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 0.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 96.0,
+              "re_encode_consistency": 0.040000000000000036
+            },
+            "contradictions": [
+              "Re-encode discrepancy (96 errors) at 0.0\u00b0."
+            ],
+            "re_encode_errors": 96,
+            "consistency_fraction": 0.040000000000000036,
+            "rank": 1
+          },
+          {
+            "hypothesis_id": "HYP_ROT_180",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 180.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 120.0,
+              "re_encode_consistency": 0.0
+            },
+            "contradictions": [
+              "Re-encode discrepancy (120 errors) at 180.0\u00b0."
+            ],
+            "re_encode_errors": 120,
+            "consistency_fraction": 0.0,
+            "rank": 2
+          },
+          {
+            "hypothesis_id": "HYP_ROT_270",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 270.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 204.0,
+              "re_encode_consistency": 0.0
+            },
+            "contradictions": [
+              "Re-encode discrepancy (204 errors) at 270.0\u00b0."
+            ],
+            "re_encode_errors": 204,
+            "consistency_fraction": 0.0,
+            "rank": 3
+          },
+          {
+            "hypothesis_id": "HYP_ROT_90",
+            "category": "PHASE_ROTATION",
+            "parameters": {
+              "angle_deg": 90.0,
+              "mapping_profile": "DEFAULT",
+              "fec_type": "CONV_K7_171_133"
+            },
+            "status": "TENTATIVE",
+            "evidence_refs": [
+              "EVID_FEC_SUCCESS"
+            ],
+            "score_components": {
+              "fec_success": 1.0,
+              "re_encode_errors": 248.0,
+              "re_encode_consistency": 0.0
+            },
+            "contradictions": [
+              "Re-encode discrepancy (248 errors) at 90.0\u00b0."
+            ],
+            "re_encode_errors": 248,
+            "consistency_fraction": 0.0,
+            "rank": 4
+          }
+        ],
+        "selected_hypothesis": {
+          "hypothesis_id": "HYP_ROT_0",
+          "category": "PHASE_ROTATION",
+          "parameters": {
+            "angle_deg": 0.0,
+            "mapping_profile": "DEFAULT",
+            "fec_type": "CONV_K7_171_133"
+          },
+          "status": "TENTATIVE",
+          "evidence_refs": [
+            "EVID_FEC_SUCCESS"
+          ],
+          "score_components": {
+            "fec_success": 1.0,
+            "re_encode_errors": 96.0,
+            "re_encode_consistency": 0.040000000000000036
+          },
+          "contradictions": [
+            "Re-encode discrepancy (96 errors) at 0.0\u00b0."
+          ],
+          "re_encode_errors": 96,
+          "consistency_fraction": 0.040000000000000036,
+          "rank": 1
+        },
+        "bitstream_analysis": {
+          "bit_count": 256,
+          "byte_count": 32,
+          "is_byte_aligned": true,
+          "remainder_bits": 0,
+          "zero_count": 123,
+          "one_count": 133,
+          "one_density": 0.5195,
+          "empirical_entropy": 0.9989,
+          "max_zero_run": 5,
+          "max_one_run": 11,
+          "mean_run_length": 1.91,
+          "total_runs": 134,
+          "run_length_distribution": {
+            "1": 74,
+            "7": 1,
+            "3": 20,
+            "4": 11,
+            "2": 25,
+            "11": 1,
+            "5": 2
+          },
+          "detected_period": null,
+          "max_autocorrelation_peak": 0.0,
+          "has_periodic_framing": false,
+          "autocorrelation_peaks": [],
+          "repeated_blocks": [],
+          "aligned_byte_count": 32,
+          "unique_byte_count": 30,
+          "printable_ascii_ratio": 0.375,
+          "ascii_control_ratio": 0.0312,
+          "zero_byte_ratio": 0.0,
+          "high_bit_set_ratio": 0.5938,
+          "byte_entropy": 4.875,
+          "top_byte_frequencies": [
+            {
+              "byte_hex": "0x72",
+              "byte_int": 114,
+              "count": 2,
+              "frequency": 0.0625
+            },
+            {
+              "byte_hex": "0xAB",
+              "byte_int": 171,
+              "count": 2,
+              "frequency": 0.0625
+            },
+            {
+              "byte_hex": "0x3C",
+              "byte_int": 60,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x13",
+              "byte_int": 19,
+              "count": 1,
+              "frequency": 0.0312
+            },
+            {
+              "byte_hex": "0x46",
+              "byte_int": 70,
+              "count": 1,
+              "frequency": 0.0312
+            }
+          ],
+          "structural_classification": "BINARY_STRUCTURED",
+          "classification_justification": [
+            "High bit entropy (0.9989) and balanced bit density (0.5195), characteristic of coded or pseudo-random binary payload."
+          ]
+        },
+        "evidence": [
+          {
+            "evidence_id": "EVID_PHYS_SNR_EST",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "estimated_snr_db",
+            "value": 6.0,
+            "unit": "dB",
+            "source": "demod.diagnostics",
+            "reliability": "MEDIUM",
+            "interpretation": "Estimated signal-to-noise ratio: 6.00 dB.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_PHYS_SYMBOL_COUNT",
+            "category": "PHYSICAL_SIGNAL",
+            "metric": "symbol_count",
+            "value": 262,
+            "unit": "symbols",
+            "source": "decoder_result.symbols",
+            "reliability": "HIGH",
+            "interpretation": "Extracted 262 constellation symbols.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_LOCK",
+            "category": "TIMING",
+            "metric": "timing_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.timing_status",
+            "reliability": "HIGH",
+            "interpretation": "Timing recovery loop reported locked status.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_TIMING_JITTER_VAR",
+            "category": "TIMING",
+            "metric": "timing_error_variance",
+            "value": 0.0,
+            "unit": "variance",
+            "source": "decoder_result.timing_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Timing error detector variance: 0.000000.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_LOCK",
+            "category": "CARRIER",
+            "metric": "carrier_lock",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.carrier_status",
+            "reliability": "HIGH",
+            "interpretation": "Carrier tracking loop locked.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_CARRIER_PHASE_OFFSET",
+            "category": "CARRIER",
+            "metric": "residual_phase_offset_rad",
+            "value": 0.0,
+            "unit": "radians",
+            "source": "decoder_result.carrier_status",
+            "reliability": "MEDIUM",
+            "interpretation": "Residual phase offset after tracking: 0.0000 rad.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_STATUS",
+            "category": "DEMODULATION",
+            "metric": "demod_status",
+            "value": "SUCCESS",
+            "unit": "status",
+            "source": "decoder_result.status",
+            "reliability": "HIGH",
+            "interpretation": "Demodulation pipeline execution returned SUCCESS.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_MAPPING_PROFILE",
+            "category": "MAPPING",
+            "metric": "mapping_profile",
+            "value": "DEFAULT",
+            "unit": "identifier",
+            "source": "decoder_result.diagnostics.mapping_profile_used",
+            "reliability": "HIGH",
+            "interpretation": "Demapped using constellation profile 'DEFAULT'.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_FEC_SUCCESS",
+            "category": "FEC",
+            "metric": "decoder_success",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.decoder_success",
+            "reliability": "HIGH",
+            "interpretation": "FEC decode (CONV_K7_171_133) succeeded.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REENCODE_ERRORS",
+            "category": "REENCODE",
+            "metric": "re_encode_errors",
+            "value": 96,
+            "unit": "bits",
+            "source": "decoder_result.re_encode_errors",
+            "reliability": "HIGH",
+            "interpretation": "Forward re-encoding of decoded payload matches channel bits with 96 errors.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_CLASS",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "structural_classification",
+            "value": "BINARY_STRUCTURED",
+            "unit": "classification",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "HIGH",
+            "interpretation": "Bitstream classified as BINARY_STRUCTURED: High bit entropy (0.9989) and balanced bit density (0.5195), characteristic of coded or pseudo-random binary payload.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_STRUCT_ENTROPY",
+            "category": "BITSTREAM_STRUCTURE",
+            "metric": "empirical_entropy",
+            "value": 0.9989,
+            "unit": "bits/bit",
+            "source": "bitstream.analyze_bitstream",
+            "reliability": "MEDIUM",
+            "interpretation": "Bitstream Shannon entropy: 0.9989 bits/bit (density=0.5195).",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_STATUS",
+            "category": "REFERENCE_AVAILABILITY",
+            "metric": "reference_status",
+            "value": "AVAILABLE",
+            "unit": "status",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External reference bits status: AVAILABLE.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_AVAILABLE",
+            "category": "REFERENCE",
+            "metric": "external_reference_available",
+            "value": 1,
+            "unit": "boolean",
+            "source": "decoder_result.diagnostics.reference_status",
+            "reliability": "HIGH",
+            "interpretation": "External ground-truth reference bits are available for validation.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BIT_COUNT",
+            "category": "REFERENCE",
+            "metric": "reference_bit_count",
+            "value": 524,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.reference_bit_count",
+            "reliability": "HIGH",
+            "interpretation": "Reference sequence contains 524 bits.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_DEMOD_BIT_ERRORS",
+            "category": "DEMODULATION",
+            "metric": "bit_errors",
+            "value": 240,
+            "unit": "bits",
+            "source": "decoder_result.diagnostics.bit_errors",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream exhibits 240 bit errors against external reference.",
+            "supports": [],
+            "contradicts": []
+          },
+          {
+            "evidence_id": "EVID_REF_BER",
+            "category": "DEMODULATION",
+            "metric": "BER",
+            "value": 0.4580152671755725,
+            "unit": "ratio",
+            "source": "decoder_result.diagnostics.bit_error_rate",
+            "reliability": "HIGH",
+            "interpretation": "Recovered demodulated bitstream measured BER: 0.458015.",
+            "supports": [],
+            "contradicts": []
+          }
+        ],
+        "contradictions": [
+          {
+            "contradiction_id": "CONTRA_NEAR_THRESHOLD_SNR",
+            "contradiction_type": "NEAR_THRESHOLD_SNR",
+            "severity": "HIGH",
+            "details": "Estimated SNR (6.0 dB) indicates near-threshold stress condition (<= 7.0 dB).",
+            "metric": "estimated_snr_db",
+            "value": 6.0,
+            "source_evidence_ids": [
+              "EVID_PHYS_SNR_EST"
+            ]
+          },
+          {
+            "contradiction_id": "CONTRA_REENCODE_DISCREPANCY",
+            "contradiction_type": "REENCODE_DISCREPANCY",
+            "severity": "HIGH",
+            "details": "Re-encoded payload does not match demapped bitstream (96 bit mismatches).",
+            "metric": "re_encode_errors",
+            "value": 96,
+            "source_evidence_ids": [
+              "EVID_REENCODE_ERRORS"
+            ]
+          }
+        ],
+        "confidence": {
+          "value": 0.12,
+          "method": "deterministic_evidence_weighted_v1",
+          "method_version": "phase3-v1",
+          "components": {
+            "physical_quality": {
+              "name": "physical_quality",
+              "raw_metric": 6.0,
+              "normalized_score": 0.125,
+              "weight": 0.15,
+              "reason": "Calculated from estimated SNR (6.0 dB).",
+              "source_evidence_ids": [
+                "EVID_PHYS_SNR_EST"
+              ]
+            },
+            "timing_quality": {
+              "name": "timing_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Timing loop locked with jitter variance 0.0000.",
+              "source_evidence_ids": [
+                "EVID_TIMING_JITTER_VAR"
+              ]
+            },
+            "carrier_quality": {
+              "name": "carrier_quality",
+              "raw_metric": 0.0,
+              "normalized_score": 1.0,
+              "weight": 0.15,
+              "reason": "Carrier converged with residual phase offset 0.0000 rad.",
+              "source_evidence_ids": [
+                "EVID_CARRIER_PHASE_OFFSET"
+              ]
+            },
+            "demodulation_quality": {
+              "name": "demodulation_quality",
+              "raw_metric": "SUCCESS",
+              "normalized_score": 1.0,
+              "weight": 0.1,
+              "reason": "Demodulator reported SUCCESS.",
+              "source_evidence_ids": [
+                "EVID_DEMOD_STATUS"
+              ]
+            },
+            "fec_consistency": {
+              "name": "fec_consistency",
+              "raw_metric": 1,
+              "normalized_score": 1.0,
+              "weight": 0.2,
+              "reason": "FEC decoder successfully converged on valid codeword.",
+              "source_evidence_ids": [
+                "EVID_FEC_SUCCESS"
+              ]
+            },
+            "reencode_consistency": {
+              "name": "reencode_consistency",
+              "raw_metric": 96,
+              "normalized_score": 0.04,
+              "weight": 0.15,
+              "reason": "Re-encoded payload had 96 mismatches against channel bits.",
+              "source_evidence_ids": [
+                "EVID_REENCODE_ERRORS"
+              ]
+            },
+            "structural_support": {
+              "name": "structural_support",
+              "raw_metric": "BINARY_STRUCTURED",
+              "normalized_score": 0.95,
+              "weight": 0.1,
+              "reason": "Recovered bitstream exhibits valid deterministic structure (BINARY_STRUCTURED).",
+              "source_evidence_ids": [
+                "EVID_STRUCT_CLASS"
+              ]
+            },
+            "reference_support": {
+              "name": "reference_support",
+              "raw_metric": 0.4580152671755725,
+              "normalized_score": 0.0,
+              "weight": 0.15,
+              "reason": "External reference bits validated with BER=4.5802e-01.",
+              "source_evidence_ids": [
+                "EVID_REF_STATUS",
+                "EVID_REF_AVAILABLE",
+                "EVID_REF_BER"
+              ]
+            }
+          },
+          "penalties": {
+            "NEAR_THRESHOLD_SNR": 0.2,
+            "REENCODE_DISCREPANCY": 0.2
+          },
+          "uncertainty_reasons": [
+            "Physical SNR (6.0 dB) is near receiver operating threshold.",
+            "Re-encode consistency discrepancy: 96 bit mismatches.",
+            "Major re-encode discrepancy against received signal."
+          ]
+        },
+        "reference": {
+          "status": "AVAILABLE",
+          "external_reference_available": true,
+          "ber": 0.4580152671755725,
+          "bit_errors": 240,
+          "reference_bit_count": 524
+        },
+        "uncertainty_reasons": [
+          "Decoder could not establish sufficient evidence for a trustworthy source payload under the observed near-threshold conditions.",
+          "Physical SNR (6.0 dB) is near receiver operating threshold.",
+          "Re-encode consistency discrepancy: 96 bit mismatches.",
+          "Major re-encode discrepancy against received signal."
+        ],
+        "provenance": {
+          "phase": "3",
+          "implementation_version": "0.3.0",
+          "truth_data_used_in_production": false,
+          "deterministic": true
+        }
+      }
+    }
+  }
+}

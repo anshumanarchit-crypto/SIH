@@ -201,3 +201,58 @@ SpectralQ includes a pre-packaged suite of ground-truth test vectors generated a
 
 ## 📜 7. License
 Developed under the MIT Open Source License.
+
+---
+
+## 📡 8. Decoder Subsystem (Arpit)
+
+The `python/spectralq/` package integrates the production decoder subsystem and Phase 3/3.1 evidence extraction engine.
+
+### 8.1 Package Architecture
+- **Location**: `python/spectralq/`
+- **Modules**:
+  - `demod.py`: Gardner timing recovery, Costas loop carrier tracking, constellation demapping (BPSK, QPSK, 8PSK, 16QAM, 2-FSK).
+  - `interleave.py`: Matrix block, diagonal, pseudorandom, and Forney convolutional deinterleaving.
+  - `fec.py`: NASA/CCSDS $K=7, r=1/2$ Viterbi decoding, Reed-Solomon RS(255, 223), LDPC, and concatenated codecs.
+  - `decoder_api.py`: Typed configuration facade (`DecoderConfig`, `DecoderPipeline`, `DecoderResult`).
+  - `bitintel.py`: Sync word mining, frame carving, CRC verification, and bitstream intelligence.
+  - `evidence.py`, `confidence.py`, `hypothesis.py`: Phase 3 deterministic evidence model and confidence scoring.
+
+### 8.2 Public Decoder API
+```python
+from spectralq.decoder_api import (
+    DecoderConfig,
+    DecoderPipeline,
+    ModulationType,
+    FECType,
+    InterleaverType,
+)
+
+config = DecoderConfig(
+    modulation=ModulationType.QPSK,
+    fec_type=FECType.CONVOLUTIONAL_K7,
+    interleaver_type=InterleaverType.BLOCK,
+    interleaver_params={"rows": 16, "cols": 34},
+)
+pipeline = DecoderPipeline(config)
+result = pipeline.decode_samples(iq_samples)
+print(f"Decoded {len(result.decoded_bits)} bits, Status: {result.status.value}")
+```
+
+### 8.3 Downstream Evidence Handoff
+Arpit's decoder produces structured, machine-readable evidence for Archit's downstream multi-source aggregator:
+- **Contract**: `docs/phase3_handoff_contract.md`
+- **Artifact**: `data/handoff/decoder_evidence.json`
+- **Reference Closure**: `data/official/sinchana/reference_bits/` (Phase 3.1 G1/G5 reference validation)
+
+### 8.4 Relationship to `core/`
+The decoder subsystem lives in `python/spectralq/` and is kept completely isolated from `core/` to guarantee zero destructive overlap with team code. Teammate modules in `core/` remain untouched.
+
+### 8.5 Running Decoder Validation & Tests
+```bash
+# Run Arpit decoder test suite (223 tests)
+pytest tests/unit tests/golden tests/integration -v
+
+# Run official Sinchana validation and regenerate handoff artifacts
+python scripts/generate_official_validation_results.py
+```
