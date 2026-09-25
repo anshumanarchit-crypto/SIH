@@ -68,3 +68,8 @@ venv.bak/
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+# Arpit Decoder Subsystem Exclusions
+.venv-spectralq/
+data/_incoming/
+*.local_bak

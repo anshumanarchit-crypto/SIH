@@ -4,3 +4,7 @@ scikit-learn>=1.6.0
 matplotlib>=3.10.0
 streamlit>=1.40.0
 pytest>=8.0.0
+
+# Arpit Decoder Subsystem (FEC / Reed-Solomon / Viterbi)
+scikit-commpy>=0.8.0
+reedsolo>=1.7.0
