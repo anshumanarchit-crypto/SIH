@@ -1,0 +1,54 @@
+{
+  "case_id": "G7",
+  "status": "VALIDATED",
+  "modulation": "QPSK",
+  "fec_type": "CONVOLUTIONAL",
+  "constraint_length": 7,
+  "generators": [
+    "0171",
+    "0133"
+  ],
+  "termination": "terminated",
+  "tail_bits": 6,
+  "interleaver_type": "NONE",
+  "source_bit_length": 256,
+  "tx_bit_length": 524,
+  "source_seed": 202607,
+  "source_bits_sha256": "4c1571817d68cf42e15e82fc7db49e80e84b3e56b697d64bc168550aeac03f5e",
+  "tx_bits_sha256": "a53edef738af3bae11f6f54331c6367231dff81498140155fca0fde340036b33",
+  "channel_snr_db": null,
+  "channel_snr_status": "TO_BE_SET_BY_SINCHANA_FOR_NEAR_THRESHOLD_WAVEFORM",
+  "notes": "QPSK + convolutional near-threshold case; SNR is a waveform-generation parameter, not encoded into the TX bitstream.",
+  "implementation_choices": {
+    "source_bits": 256,
+    "convolutional_code": "K=7, Rate 1/2",
+    "generators": [
+      "0171",
+      "0133"
+    ],
+    "termination": "terminated with 6 zero tail bits",
+    "interleaver": "NONE",
+    "notes": "Source plan specifies QPSK + convolutional near threshold SNR but does not fix exact SNR, bit length, or interleaver. These values are explicit Phase 1 Python implementation choices."
+  },
+  "seed": 202607,
+  "padding_length": 0,
+  "fec_parameters": {
+    "constraint_length": 7,
+    "polynomials": [
+      121,
+      91
+    ]
+  },
+  "interleaver_parameters": {},
+  "interleaver_metadata": {
+    "interleaver_type": "NONE",
+    "original_length": 524,
+    "padded_length": 524,
+    "padding_length": 0
+  },
+  "fec_metadata": {
+    "fec_type": "CONVOLUTIONAL",
+    "encoded_bit_length": 524,
+    "codec_class": "ConvolutionalCodec"
+  }
+}

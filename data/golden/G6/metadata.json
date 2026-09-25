@@ -1,0 +1,33 @@
+{
+  "case_id": "G6",
+  "status": "VALIDATED",
+  "modulation": "BPSK",
+  "fec_type": "CONV_K7",
+  "fec_parameters": {},
+  "interleaver_type": "CONVOLUTIONAL",
+  "interleaver_parameters": {
+    "num_branches": 4,
+    "delay_step": 2
+  },
+  "seed": 202606,
+  "source_bit_length": 256,
+  "tx_bit_length": 548,
+  "padding_length": 0,
+  "termination": "6_tail_bits",
+  "source_bits_sha256": "e897191dcf176ccde24ef00edc395e0fd9fcce22adad9afea241bdbafb468f9b",
+  "tx_bits_sha256": "90a4572a8291285359e08443fc6b52e0489a3f99fc910e6c6e92b5e9d22a6775",
+  "interleaver_metadata": {
+    "interleaver_type": "CONVOLUTIONAL",
+    "original_length": 524,
+    "flush_length": 24,
+    "interleaved_length": 548,
+    "num_branches": 4,
+    "delay_step": 2,
+    "startup_delay": 24
+  },
+  "fec_metadata": {
+    "fec_type": "CONV_K7",
+    "encoded_bit_length": 524,
+    "codec_class": "ConvolutionalCodec"
+  }
+}

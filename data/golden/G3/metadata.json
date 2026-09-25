@@ -1,0 +1,33 @@
+{
+  "case_id": "G3",
+  "status": "VALIDATED",
+  "modulation": "8-PSK",
+  "fec_type": "RS_255_223",
+  "fec_parameters": {},
+  "interleaver_type": "DIAGONAL",
+  "interleaver_parameters": {
+    "num_rows": 40,
+    "num_cols": 51
+  },
+  "seed": 202603,
+  "source_bit_length": 1784,
+  "tx_bit_length": 2040,
+  "padding_length": 0,
+  "termination": "none",
+  "source_bits_sha256": "8b7fdf6cb2d542456d086caea327c392040906f3b1e5d6c26bf23dade0f70a2b",
+  "tx_bits_sha256": "8b7f4de465dfc2133392c1d3452189cc7fd34b3be08ec550e76e4e4227b0f9d5",
+  "interleaver_metadata": {
+    "interleaver_type": "DIAGONAL",
+    "original_length": 2040,
+    "padded_length": 2040,
+    "padding_length": 0,
+    "num_rows": 40,
+    "num_cols": 51,
+    "num_blocks": 1
+  },
+  "fec_metadata": {
+    "fec_type": "RS_255_223",
+    "encoded_bit_length": 2040,
+    "codec_class": "ReedSolomonCodec"
+  }
+}
