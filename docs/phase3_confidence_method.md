@@ -2,7 +2,7 @@
 
 ## 1. Overview and Anti-Arbitrary Design
 
-In traditional heuristic demodulation tools, confidence is often assigned through arbitrary constants (e.g., `confidence = 0.95` on success). 
+In traditional heuristic demodulation tools, confidence is often assigned through arbitrary constants (e.g., `confidence = 0.95` on success).
 
 In SpectralQ Phase 3, confidence is strictly defined as **Deterministic Evidence Confidence**:
 - It is a deterministic, reproducible mathematical function of factual evidence items.

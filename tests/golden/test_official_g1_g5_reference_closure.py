@@ -45,13 +45,13 @@ def test_valid_g1_reference_ingestion():
     g1_file = _REF_BITS_DIR / "bitsG1.txt"
     assert g1_file.exists(), f"Reference file missing: {g1_file}"
     content = g1_file.read_text(encoding="utf-8")
-    
+
     assert len(content) == EXPECTED_BIT_COUNT, f"G1 expected {EXPECTED_BIT_COUNT} bits, got {len(content)}"
     assert set(content) == {"0", "1"}, "G1 reference contains non-binary characters"
-    
+
     actual_sha = hashlib.sha256(content.encode("utf-8")).hexdigest()
     assert actual_sha == EXPECTED_G1_G5_SHA256, f"G1 sha256 mismatch: {actual_sha}"
-    
+
     manifest = json.loads(_MANIFEST_FILE.read_text(encoding="utf-8"))
     assert "reference_bits" in manifest
     assert "G1" in manifest["reference_bits"]
@@ -67,13 +67,13 @@ def test_valid_g5_reference_ingestion():
     g5_file = _REF_BITS_DIR / "bitsG5.txt"
     assert g5_file.exists(), f"Reference file missing: {g5_file}"
     content = g5_file.read_text(encoding="utf-8")
-    
+
     assert len(content) == EXPECTED_BIT_COUNT, f"G5 expected {EXPECTED_BIT_COUNT} bits, got {len(content)}"
     assert set(content) == {"0", "1"}, "G5 reference contains non-binary characters"
-    
+
     actual_sha = hashlib.sha256(content.encode("utf-8")).hexdigest()
     assert actual_sha == EXPECTED_G1_G5_SHA256, f"G5 sha256 mismatch: {actual_sha}"
-    
+
     manifest = json.loads(_MANIFEST_FILE.read_text(encoding="utf-8"))
     assert "reference_bits" in manifest
     assert "G5_uncoded" in manifest["reference_bits"]
@@ -126,7 +126,7 @@ def test_ber_calculation_exactness():
     iq = np.repeat([1.0, -1.0, 1.0, -1.0], 4).astype(complex)
     cfg = DemodConfig(modulation="BPSK", samples_per_symbol=4)
     res_base = demodulate(iq, cfg)
-    
+
     # Perfect match: 0 errors
     cfg_zero = DemodConfig(modulation="BPSK", samples_per_symbol=4, external_reference_bits=res_base.hard_bits)
     res_zero = demodulate(iq, cfg_zero)

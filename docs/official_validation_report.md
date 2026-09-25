@@ -1,16 +1,16 @@
 # SpectralQ Official Waveform Validation Report (Phase 2.5)
 
-**Document ID**: `SPECTRAQ-VAL-2026-09-24`  
-**Author**: Arpit (Demodulation & Decoder Core Lead)  
-**External Deliverable**: Sinchana's GNU Octave Capture Handoff (`SIH-main (1).zip`)  
-**Evaluation Date**: 24 September 2026  
+**Document ID**: `SPECTRAQ-VAL-2026-09-24`
+**Author**: Arpit (Demodulation & Decoder Core Lead)
+**External Deliverable**: Sinchana's GNU Octave Capture Handoff (`SIH-main (1).zip`)
+**Evaluation Date**: 24 September 2026
 **Pipeline Mode**: Independent Cross-Implementation Validation (Sinchana Octave Generator $\rightarrow$ SpectralQ Python Receiver)
 
 ---
 
 ## 1. Executive Summary & Verification Matrix
 
-Eight official complex baseband (`.cf32`) captures and associated ground-truth metadata (`.truth.json`) were staged and evaluated against the SpectralQ production receiver core. 
+Eight official complex baseband (`.cf32`) captures and associated ground-truth metadata (`.truth.json`) were staged and evaluated against the SpectralQ production receiver core.
 
 > [!IMPORTANT]
 > **Data Labeling Rule**:
@@ -73,7 +73,7 @@ For all coded golden cases (G2–G7), the `bit_sha256` recorded in Sinchana's tr
   - Sliced Bits: 4,152 bits.
   - Bit Errors vs Ground-Truth TX: **0 / 4,152** ($\text{BER} = 0.0000$).
 - **De-interleaving**: Convolutional de-interleaver (6 branches) operates cleanly.
-- **FEC Decoding**: 
+- **FEC Decoding**:
   - Viterbi $K=7, R=1/2$: Decodes zero trellis path errors.
   - Reed-Solomon RS(255, 223): Zero syndrome errors.
 - **Source Bits Recovered**: **1,784 / 1,784 exact match** ($\text{Error} = 0$).

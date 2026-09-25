@@ -1,9 +1,9 @@
 # Arpit Dependency Integration Report
 
-**Target Remote**: `https://github.com/anshumanarchit-crypto/SIH.git`  
-**Branch**: `arpit/decoder-phase3.1-integration`  
-**Date**: 2026-09-25  
-**Author**: Arpit (Decoder Subsystem Owner)  
+**Target Remote**: `https://github.com/anshumanarchit-crypto/SIH.git`
+**Branch**: `arpit/decoder-phase3.1-integration`
+**Date**: 2026-09-25
+**Author**: Arpit (Decoder Subsystem Owner)
 
 ---
 

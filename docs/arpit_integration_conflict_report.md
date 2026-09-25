@@ -1,10 +1,10 @@
 # Arpit Integration Conflict & Provenance Report
 
-**Target Remote**: `https://github.com/anshumanarchit-crypto/SIH.git`  
-**Base Commit**: `f76b83e` (origin/main)  
-**Integration Branch**: `arpit/decoder-phase3.1-integration`  
-**Timestamp**: 2026-09-25  
-**Author**: Arpit (Decoder Subsystem Lead)  
+**Target Remote**: `https://github.com/anshumanarchit-crypto/SIH.git`
+**Base Commit**: `f76b83e` (origin/main)
+**Integration Branch**: `arpit/decoder-phase3.1-integration`
+**Timestamp**: 2026-09-25
+**Author**: Arpit (Decoder Subsystem Lead)
 
 ---
 

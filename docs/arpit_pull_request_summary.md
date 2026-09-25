@@ -1,10 +1,10 @@
 # Pull Request: Integrate Arpit Decoder and Phase 3.1 Subsystem
 
-**Target Repository**: `https://github.com/anshumanarchit-crypto/SIH.git`  
-**Base Branch**: `origin/main` (commit `f76b83e`)  
-**Feature Branch**: `arpit/decoder-phase3.1-integration`  
-**Author**: Arpit (Decoder Subsystem Lead)  
-**Status**: Ready for Pull Request Review  
+**Target Repository**: `https://github.com/anshumanarchit-crypto/SIH.git`
+**Base Branch**: `origin/main` (commit `f76b83e`)
+**Feature Branch**: `arpit/decoder-phase3.1-integration`
+**Author**: Arpit (Decoder Subsystem Lead)
+**Status**: Ready for Pull Request Review
 
 ---
 

@@ -62,7 +62,7 @@ class EvidenceLedger:
 
     def detect_contradictions(self) -> List[Contradiction]:
         """Scan recorded evidence for systemic contradictions and anomalies.
-        
+
         Evaluates physical synchronization, FEC integrity, re-encode consistency,
         and reference availability.
         """

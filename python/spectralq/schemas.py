@@ -78,7 +78,7 @@ class EvidenceReliability(str, Enum):
 @dataclass
 class BitstreamAnalysisResult:
     """Deterministic structural and statistical analysis of a bitstream.
-    
+
     Contains NO semantic guessing or fabricated payloads.
     """
     # A. Length

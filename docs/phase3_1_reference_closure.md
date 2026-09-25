@@ -1,9 +1,9 @@
 # Phase 3.1 — Official G1/G5 Reference Closure Report
 
-**Project**: SpectralQ SDR Receiver / Decoder Core (SIH26147)  
-**Date**: 2026-09-25  
-**Author**: Arpit (Python Decoder Core)  
-**Status**: COMPLETE — ALL OBJECTIVES ACHIEVED  
+**Project**: SpectralQ SDR Receiver / Decoder Core (SIH26147)
+**Date**: 2026-09-25
+**Author**: Arpit (Python Decoder Core)
+**Status**: COMPLETE — ALL OBJECTIVES ACHIEVED
 
 ---
 
@@ -240,7 +240,7 @@ Production runtime operates strictly on waveforms and explicit caller-provided c
 
 ## 18. Remaining Blockers
 
-**None.**  
+**None.**
 All 8 captures in the official validation suite are fully resolved, audited, and closed.
 
 ---

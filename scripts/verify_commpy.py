@@ -89,20 +89,20 @@ def run_tests():
     conv_pass = False
     try:
         from commpy.channelcoding.convcode import Trellis, conv_encode, viterbi_decode
-        
+
         # G2 Standard Configuration: Rate 1/2, K=7, Generators [171, 133] octal
         memory = np.array([6])
         g_matrix = np.array([[0o171, 0o133]])
         trellis = Trellis(memory, g_matrix)
-        
+
         # Test input bits
         input_bits = np.array([1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0], dtype=int)
         encoded_bits = conv_encode(input_bits, trellis)
-        
+
         # Hard-decision Viterbi decode
         decoded_bits = viterbi_decode(encoded_bits.astype(float), trellis, tb_depth=15, decoding_type='hard')
         recovered_bits = decoded_bits[:len(input_bits)]
-        
+
         if np.array_equal(input_bits, recovered_bits):
             print(f"[PASS] Convolutional Encode: Encoded {len(input_bits)} bits -> {len(encoded_bits)} coded bits")
             print(f"[PASS] Viterbi Decode: Exactly recovered original {len(recovered_bits)} bits without errors")

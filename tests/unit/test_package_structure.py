@@ -111,7 +111,7 @@ def test_handoff_directory_not_ignored():
 
     gitignore_path = workspace_root / ".gitignore"
     assert gitignore_path.exists(), ".gitignore must exist"
-    
+
     # Check that no active (non-comment) rule ignores data/handoff
     for line in gitignore_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()

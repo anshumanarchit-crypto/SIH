@@ -94,7 +94,7 @@ The public facade exposes typed dataclasses rather than arbitrary tuples or unst
 94: - `crc_info` (`Dict[str, Any]`): Discovered CRC matches, polynomial names, syndrome validity, residual bit-error evidence.
 95: - `diagnostics` (`Dict[str, Any]`): Execution timings, SNR/EVM estimates, traceback depth, soft metric statistics.
 96: - `warnings` (`List[str]`): Traceable non-fatal warnings encountered during processing.
-97: 
+97:
 98: ### Demodulation Result Contract (`DemodResult` in `spectralq.demod`)
 99: The standalone demodulator output contract provides factual DSP recovery metrics without computing downstream confidence:
 100: - `status` (`DemodStatus`): `SUCCESS`, `UNSUPPORTED`, `INVALID_INPUT`, `DECODER_FAILURE`, `LOW_QUALITY`, `NON_CONVERGED`.
@@ -114,11 +114,11 @@ The public facade exposes typed dataclasses rather than arbitrary tuples or unst
 114: - `diagnostic_metrics` (`Dict[str, Any]`): Timing jitter, EVM estimate, execution time, etc.
 115: - `warnings` (`List[str]`): Diagnostic warnings.
 116: - `failure_reason` (`Optional[str]`): Description of failure when status != SUCCESS.
-117: 
+117:
 118: ---
-119: 
+119:
 120: ## 4. Module Responsibility Matrix
-121: 
+121:
 122: | Module | Exact Responsibilities | Strict Exclusions |
 123: |---|---|---|
 124: | `interleave.py` | ONLY interleaving and de-interleaving algorithms (Block, Diagonal, Deterministic PRNG, Convolutional/Forney, Identity/NONE). | No demodulation, no FEC codecs, no framing logic. |
@@ -126,20 +126,20 @@ The public facade exposes typed dataclasses rather than arbitrary tuples or unst
 126: | `demod.py` | ONLY waveform/symbol recovery: RRC matched filtering, Gardner timing recovery, Costas carrier recovery, constellation slicing and LLR generation for PSK, QAM, and FSK. | No FEC decoding, no de-interleaving, no truth-data evaluation. |
 127: | `decoder_api.py` | Stable public facade orchestrating the decoder pipeline (`DecoderPipeline.decode`); enforces input validation and returns typed `DecoderResult`. | No confidence scoring, no UNKNOWN classification. |
 128: | `bitintel.py` | Post-decoding structure analysis: sync/preamble mining, frame candidate carving, multi-polynomial CRC candidate scanning, header/payload mapping, and cross-burst consistency. | No waveform recovery, no raw FEC algorithms. |
-129: 
+129:
 130: ---
-131: 
+131:
 132: ## 5. Error Semantics & Robustness Rules
-133: 
+133:
 134: The decoder must distinguish failures accurately to supply clean evidence to Archit's hypothesis engine:
-135: 
+135:
 136: 1. **`SUCCESS`**: Pipeline completed all stages with verified FEC convergence or zero syndrome errors.
 137: 2. **`UNSUPPORTED`**: Requested combination of modulation/FEC/interleaver is valid in theory but not supported by the codec catalog.
 138: 3. **`INVALID_INPUT`**: Input waveform is malformed (e.g. empty array, NaN/Inf values, incorrect dimensions, incompatible sample rate).
 139: 4. **`DECODER_FAILURE`**: Demodulation succeeded, but FEC decoding was unable to correct errors or syndromes failed.
 140: 5. **`LOW_QUALITY`**: Waveform SNR or synchronization metrics fall below demodulation operating limits (e.g. Costas loop unlocked, Gardner divergence).
 141: 6. **`NON_CONVERGED`**: Demodulator timing or carrier recovery loops failed to lock within tolerance.
-142: 
+142:
 143: ### Strict Prohibitions
 144: - **DO NOT** represent all failures as empty arrays (`np.array([])`). Set appropriate `DecoderStatus` and provide diagnostic context.
 145: - **DO NOT** silently fall back from one codec or interleaver to another without explicit pipeline configuration.
