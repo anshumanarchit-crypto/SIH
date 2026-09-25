@@ -455,7 +455,7 @@ def demodulate_2fsk(
     if method == "discriminator" and mark_freq is None and space_freq is None:
         # Instantaneous frequency discriminator approach
         phase = np.unwrap(np.angle(samples))
-        freq = np.diff(phase) * (sample_rate / (2.0 * np.pi))
+        freq = np.diff(phase, prepend=phase[0]) * (sample_rate / (2.0 * np.pi))
         sym_freqs = np.mean(freq[:num_syms * sps].reshape(num_syms, sps), axis=1)
 
         median_freq = float(np.median(sym_freqs))

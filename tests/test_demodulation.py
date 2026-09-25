@@ -116,6 +116,10 @@ def test_demodulate_2fsk_matched_filter_and_discriminator():
     ref_syms_d, rx_bits_d, soft_llrs_d, diag_d = demodulate_2fsk(
         samples, sample_rate=fs, sps=sps, method="discriminator"
     )
+    assert len(rx_bits_d) == n_syms
+    assert len(ref_syms_d) == n_syms
+    assert len(soft_llrs_d) == n_syms
+    assert diag_d["method"] == "instantaneous_frequency_discriminator"
     np.testing.assert_array_equal(rx_bits_d, tx_bits)
 
 
