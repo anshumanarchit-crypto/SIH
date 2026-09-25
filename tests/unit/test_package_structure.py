@@ -117,4 +117,3 @@ def test_handoff_directory_not_ignored():
         line = line.strip()
         if line and not line.startswith("#"):
             assert "data/handoff" not in line, f"data/handoff must NOT be an active rule in .gitignore: {line}"
-

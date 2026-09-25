@@ -249,4 +249,3 @@ def test_identity_interleave_exactness_and_contract():
     assert meta["padding_length"] == 0
     assert meta["original_length"] == 524
     assert meta["padded_length"] == 524
-

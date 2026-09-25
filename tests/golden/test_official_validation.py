@@ -310,4 +310,3 @@ def test_production_truth_isolation():
         for term in forbidden_terms:
             assert term not in content, f"Forbidden term '{term}' referenced in production file {py_file.name}"
         assert not re.search(r'\breference_bits\b', content), f"Standalone 'reference_bits' referenced in {py_file.name}"
-

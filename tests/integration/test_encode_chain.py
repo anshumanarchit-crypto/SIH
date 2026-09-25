@@ -188,4 +188,3 @@ def test_round_trip_g7():
     assert dec_res.decoder_success is True
     assert len(dec_res.recovered_source_bits) == 256
     assert np.array_equal(source_bits, dec_res.recovered_source_bits)
-
